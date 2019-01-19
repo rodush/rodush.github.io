@@ -193,13 +193,13 @@
   </url>
   
   <url>
-    <loc>/tags/angular/</loc>
+    <loc>/categories/angular/</loc>
     <lastmod>2014-05-16T10:18:44+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/angular/</loc>
+    <loc>/tags/angular/</loc>
     <lastmod>2014-05-16T10:18:44+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -241,14 +241,14 @@
   </url>
   
   <url>
-    <loc>/tags/composer/</loc>
-    <lastmod>2012-07-04T20:39:30+00:00</lastmod>
+    <loc>/categories/composer/</loc>
+    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/composer/</loc>
-    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
+    <loc>/tags/composer/</loc>
+    <lastmod>2012-07-04T20:39:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -301,14 +301,14 @@
   </url>
   
   <url>
-    <loc>/tags/debian/</loc>
-    <lastmod>2014-08-27T08:54:00+00:00</lastmod>
+    <loc>/categories/debian/</loc>
+    <lastmod>2017-02-08T05:33:57+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/debian/</loc>
-    <lastmod>2017-02-08T05:33:57+00:00</lastmod>
+    <loc>/tags/debian/</loc>
+    <lastmod>2014-08-27T08:54:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -439,26 +439,26 @@
   </url>
   
   <url>
-    <loc>/tags/java/</loc>
-    <lastmod>2014-08-27T08:54:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/java/</loc>
     <lastmod>2014-08-27T08:54:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/javascript/</loc>
-    <lastmod>2012-04-18T12:57:57+00:00</lastmod>
+    <loc>/tags/java/</loc>
+    <lastmod>2014-08-27T08:54:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/javascript/</loc>
     <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript/</loc>
+    <lastmod>2012-04-18T12:57:57+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -547,13 +547,13 @@
   </url>
   
   <url>
-    <loc>/tags/php/</loc>
+    <loc>/categories/php/</loc>
     <lastmod>2016-10-19T12:16:05+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/php/</loc>
+    <loc>/tags/php/</loc>
     <lastmod>2016-10-19T12:16:05+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -631,13 +631,13 @@
   </url>
   
   <url>
-    <loc>/tags/requirejs/</loc>
+    <loc>/categories/requirejs/</loc>
     <lastmod>2014-05-16T10:18:44+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/requirejs/</loc>
+    <loc>/tags/requirejs/</loc>
     <lastmod>2014-05-16T10:18:44+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -715,14 +715,14 @@
   </url>
   
   <url>
-    <loc>/tags/symfony/</loc>
-    <lastmod>2012-07-07T19:57:18+00:00</lastmod>
+    <loc>/categories/symfony/</loc>
+    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/symfony/</loc>
-    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
+    <loc>/tags/symfony/</loc>
+    <lastmod>2012-07-07T19:57:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -859,14 +859,14 @@
   </url>
   
   <url>
-    <loc>/tags/xml/</loc>
-    <lastmod>2010-10-27T08:47:22+00:00</lastmod>
+    <loc>/categories/xml/</loc>
+    <lastmod>2011-03-20T20:04:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/xml/</loc>
-    <lastmod>2011-03-20T20:04:48+00:00</lastmod>
+    <loc>/tags/xml/</loc>
+    <lastmod>2010-10-27T08:47:22+00:00</lastmod>
     <priority>0</priority>
   </url>
   
