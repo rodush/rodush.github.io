@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Symfony sfThumbnailPlugin как виджет формы | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">June 28, 2010</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Symfony sfThumbnailPlugin как виджет формы</h1>
+  <div class="content">
+    <p>В процессе разработки <a title="Portfolio" href="http://www.poli-klinika.com.ua/" target="_blank">одного веб-сайта</a> в админ-панели мне понадобилось реализовать возможность загрузки фотографии к создаваемой записи. Задача, само собой разумеется частая и востребованная. Так как разработку сайта на делал на основе фреймворка symfony, то решил первым делом порыскать среди готовых плагинов.</p>
+
+<p>Поставленную задачу с успехом должен был решить плагин <a title="sfThumbnailPlugin" href="http://www.symfony-project.org/plugins/sfThumbnailPlugin" target="_blank">sfThumbnailPlugin.</a> В симфони (&gt;=1.2), как известно, для загрузки файлов служит виджет sfWidgetFormInputFileEditable. Данный виджет представляет привычное поле выбора файла из файловой системы. За саму же загрузку файла на сервер отвечает валидатор для указанного виджета. Таким образом, задача для меня состояла в том, чтобы &#171;прикрутить&#187; плагин создания &#171;превьюшек&#187; к стандартному виджету.</p>
+
+<p>После углубленного изучения жизненного пути файла в недрах виджетов и валидаторов symfony (от момента его выбора до загрузки на сервер) мне показалось самым логичным использовать функциональность sfThumbnailPlugin именно в валидаторе загружаемого файла. То-есть, после нажатия кнопки сохранения какой-либо записи загруженный файл передается на обработку собственноручно написаного валидатора. Свой файл валидатора я назвал <strong>sfValidatorFileThumb</strong> и поместил в папку lib/validators проекта.</p>
+
+<p>Класс конфигурации формы выглядит следующим образом (<em>для примера</em>*):</p>
+
+<pre lang="PHP">//................................
+public function configure()
+{
+  $this->widgetSchema['photo'] = new sfWidgetFormInputFileEditable(
+    array(
+      'file_src'  => '/uploads/doctors/thumb/' . $this->getObject()->getPhoto(),
+      'is_image'  => true,
+      'with_delete' => true,
+      'delete_label'  => "Удалить фото"
+    )
+);</pre>
+
+<p>Валидатор под этот виджет:</p>
+
+<pre lang="PHP">$this->validatorSchema['photo'] = new sfValidatorFileThumb(
+  array(
+    'path'        => sfConfig::get('sf_upload_dir') . DIRECTORY_SEPARATOR . 'doctors',
+    'required'    => false,
+    'mime_types'  => 'web_images',
+    // Part below concerning a thumbnail
+    'with_thumb'  => true,
+    'thumb_path'  => sfConfig::get('sf_upload_dir') . DIRECTORY_SEPARATOR . 'doctors/thumb',
+    'thumb_scale' => true,
+    'thumb_inflate' => true,
+    'thumb_quality' => 80, // must be in a range [0-100]
+    'thumb_dimensions'  => array('width' => 116, 'height' => 154)
+)
+);</pre>
+
+<p>Сам же файл валидатора имеет следующий код:</p>
+
+<pre lang="PHP">class sfValidatorFileThumb extends sfValidatorFile
+/**
+* Configures the current validator.
+*
+* @access protected
+*
+* @param array $options   An array of options
+* @param array $messages  An array of error messages
+*/
+protected function configure($options = array(), $messages = array())
+{
+// First configure the parent object
+parent::configure($options, $messages);
+
+// Add options
+$this->addOption('with_thumb', isset($options['with_thumb']) ? $options['with_thumb'] : false);
+$this->addOption('thumb_path', isset($options['thumb_path']) ? $options['thumb_path'] : sfConfig::get('sf_upload_dir') . DIRECTORY_SEPARATOR . 'assets');
+$this->addOption('thumb_dimensions', isset($options['thumb_dimensions']) ? $options['thumb_dimensions'] : null);
+$this->addOption('thumb_scale', isset($options['thumb_scale']) ? $options['thumb_scale'] : false);
+$this->addOption('thumb_inflate', isset($options['thumb_inflate']) ? $options['thumb_inflate'] : false);
+$this->addOption('thumb_quality', isset($options['thumb_quality']) ? $options['thumb_quality'] : false);
+
+// Add messages:
+//    $this->addMessage('thumb_path', 'Path does not exists or directory is not writeble!');
+
+// Add our custom class that will handle uploaded file
+$this->addOption('validated_file_class', 'withThumbnailValidatedFile');
+}
+
+/**
+* Make validation for a file
+*
+* @access protected
+* @author Roman Dushko
+*
+* @see sfValidatorFile
+*/
+protected function doClean($value)
+{
+// Validated file object
+$validatedFileObj = parent::doClean($value);
+
+if ($this->getOption('with_thumb'))
+{
+// Check if plugin sfThumpnailPlugin exists
+if (!class_exists('sfThumbnail')) // @todo: Could we not to check if plugin is enabled? Or should we check?
+{
+throw new Exception(sprintf('A class for making the thumbnails "%s" is not found', 'sfThumbnail'));
+}
+
+// Check if a path where thumbnail will be stored is provided
+if(null === $this->getOption('thumb_path'))
+{
+throw new Exception('Path to thumbnails is not provided!');
+}
+
+// Set needed validated file properties
+$validatedFileObj->setWithThumbnail(true);
+$validatedFileObj->setThumbProperties(
+array(
+'thumb_path' => $this->getOption('thumb_path'),
+'thumb_dimensions' => $this->getOption('thumb_dimensions'),
+'thumb_scale' => $this->getOption('thumb_scale'),
+'thumb_inflate' => $this->getOption('thumb_inflate'),
+'thumb_quality' => $this->getOption('thumb_quality')
+)
+);
+}
+
+return $validatedFileObj;
+}
+
+}
+
+class withThumbnailValidatedFile extends sfValidatedFile
+{
+protected $withTumbnail = false;
+protected $thumbProperties = array(
+'thumb_path' => null,
+'thumb_dimensions' => null,
+'thumb_scale' => false,
+'thumb_inflate' => false,
+'thumb_quality' => null
+);
+
+public function save($file = null, $fileMode = 0666, $create = true, $dirMode = 0777)
+{
+// Save original image
+$savedFile = parent::save($file, $fileMode, $create, $dirMode);
+
+// Check if we need to upload a thumbnail
+if ($this->withTumbnail)
+{
+// Get dimension for thumbnail
+$thumbDimensions = $this->getThumbProperty('thumb_dimensions');
+if ($thumbDimensions)
+{
+$thumbWidth = isset($thumbDimensions['width']) ? $thumbDimensions['width'] : null;
+$thumbHeight = isset($thumbDimensions['height']) ? $thumbDimensions['height'] : null;
+}
+
+// Create instance of thumbnailer
+/**
+* @todo: make it possible to define 'adapterClass' for sfThumbnail (and it's options) in factories.yml
+*/
+$thumnailer = new sfThumbnail(
+$thumbWidth,
+$thumbHeight,
+$this->getThumbProperty('thumb_scale'),
+$this->getThumbProperty('thumb_inflate'),
+$this->getThumbProperty('thumb_quality')
+);
+// Load saved file
+$thumnailer->loadFile($this->getSavedName());
+// Save a thumbnail
+$thumnailer->save($this->getThumbProperty('thumb_path') . DIRECTORY_SEPARATOR . basename($this->getSavedName()));
+}
+
+return $savedFile;
+}
+
+public function setWithThumbnail($with_thumb = false)
+{
+$this->withTumbnail = $with_thumb;
+}
+
+public function getWithThumbnail()
+{
+return $this->withTumbnail;
+}
+
+public function setThumbProperties($properties)
+{
+$this->thumbProperties = $properties;
+}
+
+public function getThumbProperties()
+{
+return $this->thumbProperties;
+}
+
+public function getThumbProperty($propName)
+{
+return $this->thumbProperties[$propName];
+}
+
+}
+</pre>
+
+<p>Собственно, за создание &#171;превьюшки&#187; и загрузки файлов на сервер отвечает класс withThumbnailValidatedFile, расширяющий sfValidatedFile, а именно его метод save, переопределяющий родительский метод.</p>
+
+<p>В самом классе валидатора файла-превьюшки мы указываем, кто будет отвечать за обработку провалидированного файла:</p>
+
+<p><code>$this-&gt;addOption('validated_file_class', 'withThumbnailValidatedFile');</code></p>
+
+<p>Вот и всё! Естественно возможны дальнейшие улучшения, но для меня данное решение оказалось подходящим. При выборе файла и сохранении записи мы делаем две операции:</p>
+
+<ol>
+<li>Сохраняем оригинальное изображение</li>
+<li>Создаем и сохраняем thumbnail с помощью &#171;допиленного&#187; валидатора.</li>
+</ol>
+
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 0px; width: 1px; height: 1px; overflow: hidden;">
+  sfThumbnailPlugin
+</div>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

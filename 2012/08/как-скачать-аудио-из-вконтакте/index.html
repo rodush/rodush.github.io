@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Как скачать аудио из ВКонтакте | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">August 6, 2012</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Как скачать аудио из ВКонтакте</h1>
+  <div class="content">
+    <p>Небольшой скриптец, который поможет вам создать список URL адресов mp3 файлов, который можно затем &#171;скормить&#187; какому-нибудь Download Master.</p>
+
+<p>Сей скриптец нужно запускать в консоли <a href="http://getfirebug.com">FireBug</a> (расширение к броузеру FireFox, ориентированное на программистов), находясь при этом на странице &#171;Мои аудиозаписи&#187;.</p>
+
+<p>В результате выполнения в консоль будет выведен список адресов аудифайлов вашего плейлиста. Копируете список в текстовый файл, который потом импортируете в Download Master через пункт меню File -&gt; Import. Вуаля! Файлы качаются! Единственная проблемка &#8212; названия. Это уникальные идентификаторы файлов, а не понятные человеку слова. Хотите &#8212; переименуйте вручную, а хотите &#8212; потом можно написать скриптец, скажем на PHP, который прочитает ID3-тэги файлов и переименует файлы с использованием нормальных названий.</p>
+
+<p>Собственно, сам скрипт:</p>
+
+<pre lang="javascript">var hiddenFields = document.getElementsByTagName("input");
+var mp3s = [];
+function getHiddenField(elem, index, collection){
+    if(elem.getAttribute("type") == "hidden" && (/audio_info\d+_\d+/).test(elem.getAttribute("id"))){
+        mp3s.push(elem.getAttribute("value").split(",")[0]);
+    }
+}
+for(var i=0; i &lt; hiddenFields.length; i++){
+    getHiddenField(hiddenFields[i], i, hiddenFields);
+}
+console.log(mp3s.join("\n"));
+</pre>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on Roman Dushko, Software Engineer</title>
+    <link>/tags/installation/</link>
+    <description>Recent content in Installation on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Aug 2014 07:29:58 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install proprietary Oracle JDK in Debian 7.0 Wheezy</title>
+      <link>/2014/08/install-proprietary-oracle-jdk-in-debian-7-0-wheezy/</link>
+      <pubDate>Wed, 27 Aug 2014 07:29:58 +0000</pubDate>
+      
+      <guid>/2014/08/install-proprietary-oracle-jdk-in-debian-7-0-wheezy/</guid>
+      <description>This is a YAP (yet another post) about how one can manually install Oracle&amp;#8217;s proprietary JDK/JRE version (in Debian 7.0 Wheezy as an example).
+First of all, download fresh version of JDK/JRE from the Oracle website.
+Copy archive to desired location, in the following example we will use
+/usr/lib/jvm as an installation source directory.
+Unpack the archive and run next commands:
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk/bin/java 1071 sudo update-alternatives --install /usr/bin/javac javac /media/mydisk/jdk/javac 1071 sudo update-alternatives --install /usr/bin/jcontrol jcontrol /media/mydisk/jdk/bin/jcontrol 1071  You may need read man pages for update-alternatives to check out the parameters and what they mean.</description>
+    </item>
+    
+  </channel>
+</rss>

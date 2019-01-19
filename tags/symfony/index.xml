@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Symfony on Roman Dushko, Software Engineer</title>
+    <link>/tags/symfony/</link>
+    <description>Recent content in Symfony on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 07 Jul 2012 19:57:18 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/symfony/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Как обновить проект с symfony-2.0 до symfony-2.1</title>
+      <link>/2012/07/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D1%81-symfony-2-0-%D0%B4%D0%BE-symfony-2-1/</link>
+      <pubDate>Sat, 07 Jul 2012 19:57:18 +0000</pubDate>
+      
+      <guid>/2012/07/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D1%81-symfony-2-0-%D0%B4%D0%BE-symfony-2-1/</guid>
+      <description>Изначально я создавал свой проект на версии symfony 2.0 без vendors (standard edition). Все зависимости были установлены через
+php bin/vendors install Проект находился в git-репозитории.
+Сразу оговорка &amp;#8212; на момент написания статьи версия symfony 2.1 находилась в стадии бета-тестирования.
+Тем не менее, основная тенденция уже была понятна и значительных изменений в АПИ не предвиделось.
+Одно из ключевых нововведений в symfony 2.1 &amp;#8212; использование Composer.
+На вебсайте фреймворка Symfony можно найти описание процесса создания нового проекта, но нет информации как обновить существующий.</description>
+    </item>
+    
+    <item>
+      <title>Composer — minimum-stability по-умолчанию считается stable</title>
+      <link>/2012/07/composer-minimum-stability-%D0%BF%D0%BE-%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E-%D1%81%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82%D1%81%D1%8F-stable/</link>
+      <pubDate>Wed, 04 Jul 2012 20:39:30 +0000</pubDate>
+      
+      <guid>/2012/07/composer-minimum-stability-%D0%BF%D0%BE-%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E-%D1%81%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82%D1%81%D1%8F-stable/</guid>
+      <description>Сегодня (4 июля 2012) Composer изменяет значение по-умолчанию свойства stability с dev на stable.
+Подробнее здесь и здесь.
+Что это значит? Что по-умолчанию Composer будет игнорировать пакеты RC, beta, alpha или dev.
+Столкнулся я с этим, когда попытался проапдейтить зависимости проекта, использующего symfony-2.1.x, которая на момент написания заметки находится на стадии бета-тестирования.
+&amp;lt;br /&amp;gt; rodush@debian:~/gtrs$ php composer.phar update&amp;lt;br /&amp;gt; Updating dependencies&amp;lt;br /&amp;gt; Your requirements could not be solved to an installable set of packages.</description>
+    </item>
+    
+    <item>
+      <title>Symfony, Yaml отключение файла</title>
+      <link>/2010/09/symfony-yaml-%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0/</link>
+      <pubDate>Tue, 28 Sep 2010 12:46:00 +0000</pubDate>
+      
+      <guid>/2010/09/symfony-yaml-%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0/</guid>
+      <description>Бывает так, что в некоторых конфигурационных файлах для представления view.yml необходимо отключить некоторые из файлов &amp;#8212; css или javascript. Как известно, массив в yml можно определить как
+key: - value1.css - value2.css - value3.css  Отлючается определенный файл с помощью директивы &amp;#171;-&amp;#187; (обычный дефис).
+Иногда при отключении файла можно случайно либо по незнанию некорректно поставить прочерк (между знаком отключения и название файла появится пробел), т.е., к примеру при желании отключить второй файл value2.</description>
+    </item>
+    
+    <item>
+      <title>Symfony sfThumbnailPlugin как виджет формы</title>
+      <link>/2010/06/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-sfthumbnailplugin-%D0%BA%D0%B0%D0%BA-%D0%B2%D0%B8%D0%B4%D0%B6%D0%B5%D1%82%D0%B0/</link>
+      <pubDate>Mon, 28 Jun 2010 20:20:31 +0000</pubDate>
+      
+      <guid>/2010/06/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-sfthumbnailplugin-%D0%BA%D0%B0%D0%BA-%D0%B2%D0%B8%D0%B4%D0%B6%D0%B5%D1%82%D0%B0/</guid>
+      <description>В процессе разработки одного веб-сайта в админ-панели мне понадобилось реализовать возможность загрузки фотографии к создаваемой записи. Задача, само собой разумеется частая и востребованная. Так как разработку сайта на делал на основе фреймворка symfony, то решил первым делом порыскать среди готовых плагинов.
+Поставленную задачу с успехом должен был решить плагин sfThumbnailPlugin. В симфони (&amp;gt;=1.2), как известно, для загрузки файлов служит виджет sfWidgetFormInputFileEditable. Данный виджет представляет привычное поле выбора файла из файловой системы.</description>
+    </item>
+    
+  </channel>
+</rss>

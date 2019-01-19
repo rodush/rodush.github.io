@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firefox on Roman Dushko, Software Engineer</title>
+    <link>/tags/firefox/</link>
+    <description>Recent content in Firefox on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Aug 2014 08:54:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Firefox Java Plugin — Debian Wheezy</title>
+      <link>/2014/08/firefox-java-plugin-debian-wheezy/</link>
+      <pubDate>Wed, 27 Aug 2014 08:54:00 +0000</pubDate>
+      
+      <guid>/2014/08/firefox-java-plugin-debian-wheezy/</guid>
+      <description>By default Firefox has no Java plugin because of security issues.
+One can install plugin by following next steps:
+ Exit Firefox browser if it is running
+ Make directory if it does not exist -&amp;gt; /usr/lib/mozilla/plugins
+ Make a symbolic link for libnpjp2.so file which resides in JRE directory, e.g.:
+  sudo ln -s /usr/lib/jvm/jdk1.8.0_20/jre/lib/amd64/libnpjp2.so /usr/lib/mozilla/plugins/libnpjp2.so  Please note, that amd64 is an architecture of the OS you have installed, possibly it could be i386 in your case.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Установка сервера приложений Myna | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">April 3, 2012</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Установка сервера приложений Myna</h1>
+  <div class="content">
+    <p>Myna &#8212; это серверный javascript. Детальнее можно узнать <a title="Myna home" href="http://www.mynajs.org/" target="_blank">здесь</a>.</p>
+
+<p>Установка возможна двумя способами:</p>
+
+<ol>
+<li><p>как обычный сервлет на любом Java сервере (Tomcat, JBoss, Glassfish, WebSphere, etc)</p></li>
+
+<li><p>как отдельное приложение (в данном случае Tomcat уже включен в поставку).</p></li>
+</ol>
+
+<p>На момент написания статьи последним выпущенными релизом была версия myna-1.0_beta_9. Пусть вас не пугает приставка <em>beta &#8212;</em> авторы заявляют, что приложение очень стабильно и успешно работает на многих серверах в боевом режиме.</p>
+
+<p>Для себя я выбрал установку как standalone приложение. Для этого скачал архивчик [myna-1.0_beta_9.war.</p>
+
+<p>]<a href="http://code.google.com/p/myna/downloads/detail?name=myna-1.0_beta_9.war&amp;can=2&amp;q=">1</a> .</p>
+
+<p>Установка происходит следующим образом:</p>
+
+<p><code>&lt;br /&gt;
+java -jar /path/to/myna-1.0_beta_9.war -m install&lt;br /&gt;
+</code></p>
+
+<p>и далее идет ряд дополнительных параметров, узнать о которых вы можете выполнив команду</p>
+
+<p><code>&lt;br /&gt;
+java -jar /path/to/myna-1.0_beta_9.war --help&lt;br /&gt;
+</code></p>
+
+<p>но! При запуске этой команды под своим пользователем unix (если вы не root) вы получите такие сообщения:</p>
+
+<pre>Installing/upgrading Myna in '/var/www/myna'...
+Done unpacking.
+Install mode must be run as root.
+</pre>
+
+<p>Не знаю почему, но мне не помогло то, что я добавил <strong>sudo</strong> в начало команды. Успеха я не добился.</p>
+
+<p>Весь секрет оказался оказался в том, что нужно явно запускать установку из-под пользователя root.</p>
+
+<p>И, да, помимо этого я указал полный путь к war-файлу myna. Далее установка прошла без проблем.</p>
+
+<p>Видимо, всё дело в том, что установщик пытается прописать скрипт запуска для myna в директорию /etc/init.d/</p>
+
+<p>После установки сервер запускается автоматически и вы можете увидеть результат по адресу</p>
+
+<p><a href="http://localhost:8180/">http://localhost:8180/</a> (8180 &#8212; порт для myna по-умолчанию).</p>
+
+<p>Когда вы настроили и запустили сервер, можете углубиться в документацию, чтобы узнать как писать серверные приложения с помощью Myna и чистого JavaScript.</p>
+
+<p>Удачи!</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

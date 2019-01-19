@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/useful-links/</loc>
+    <lastmod>2017-06-28T07:53:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/04/git-push-to-remote-without-creating-local-branch/</loc>
+    <lastmod>2017-04-05T15:41:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/02/how-to-specify-custom-ssh-key-while-git-clone-from-github/</loc>
+    <lastmod>2017-02-08T05:33:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/01/bluetooth-keyboard-does-not-connect-automatically-to-laptop-with-mac-os-sierra/</loc>
+    <lastmod>2017-01-16T09:45:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/10/functional-approach-in-php/</loc>
+    <lastmod>2016-10-19T12:16:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/01/solved-upgrading-from-php-5-5-to-php-5-6-on-ubuntu-12-04-lts/</loc>
+    <lastmod>2016-01-05T10:50:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/08/firefox-java-plugin-debian-wheezy/</loc>
+    <lastmod>2014-08-27T08:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/08/install-proprietary-oracle-jdk-in-debian-7-0-wheezy/</loc>
+    <lastmod>2014-08-27T07:29:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/05/having-error-while-trying-use-jqfileupload-with-requirejs/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/05/how-to-add-role-to-the-postgresql/</loc>
+    <lastmod>2014-05-16T09:15:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2013/09/postgres-and-earthdistance-extension/</loc>
+    <lastmod>2013-09-24T20:50:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2013/03/php-5-4-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8%D0%B7-dotdeb/</loc>
+    <lastmod>2013-03-27T23:15:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2013/01/%D0%BA%D0%B0%D0%BA-%D1%81%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%B8-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-php-5-4-x-%D0%BD%D0%B0-debia/</loc>
+    <lastmod>2013-01-24T22:04:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/08/fn-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C-%D0%BD%D0%B0-lenovo-thinkpad-edge-debian/</loc>
+    <lastmod>2012-08-11T07:12:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/08/%D0%BA%D0%B0%D0%BA-%D0%BC%D0%B0%D1%80%D1%81%D0%BE%D1%85%D0%BE%D0%B4-%D0%BF%D1%80%D0%B8%D0%B7%D0%B5%D0%BC%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D0%BD/</loc>
+    <lastmod>2012-08-08T12:16:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/08/%D0%BA%D0%B0%D0%BA-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%B0%D1%83%D0%B4%D0%B8%D0%BE-%D0%B8%D0%B7-%D0%B2%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/07/form-builder-entity-field-class-bundlealiasnameentityclassname-does-not-exist/</loc>
+    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/07/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D1%81-symfony-2-0-%D0%B4%D0%BE-symfony-2-1/</loc>
+    <lastmod>2012-07-07T19:57:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/07/composer-minimum-stability-%D0%BF%D0%BE-%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E-%D1%81%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82%D1%81%D1%8F-stable/</loc>
+    <lastmod>2012-07-04T20:39:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/06/symfony-2-0-fosuserbundle-%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0-could-not-load-type/</loc>
+    <lastmod>2012-06-19T10:05:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/04/javascript-%D0%BA%D0%B0%D0%BA-%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D0%B1%D0%B5%D0%BB%D1%8B-%D0%B2-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%B5-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5/</loc>
+    <lastmod>2012-04-18T12:57:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/04/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-myna/</loc>
+    <lastmod>2012-04-03T11:33:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/03/%D0%B4%D0%BB%D1%8F-php-5-4-debian-%D0%BD%D0%B5%D1%82-suhosin-xcache-xdebug-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B9/</loc>
+    <lastmod>2012-03-25T12:44:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/03/%D0%BE%D1%82%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-git-push/</loc>
+    <lastmod>2012-03-22T17:23:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2012/03/%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D1%81%D0%BA%D1%80%D1%8B%D1%82%D1%8C-%D0%BE%D1%84%D1%84%D0%BB%D0%B0%D0%B9%D0%BD-%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B-%D0%B2-linux-skype/</loc>
+    <lastmod>2012-03-20T11:33:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/08/%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F-csr-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0/</loc>
+    <lastmod>2011-08-17T14:23:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/08/%D0%BA%D0%B0%D0%BA-%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-cruisecontrol/</loc>
+    <lastmod>2011-08-02T07:03:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/03/phpmyadmin-session-timeout/</loc>
+    <lastmod>2011-03-27T12:26:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/03/%D0%BE%D1%82%D1%81%D0%BB%D0%B5%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-%D0%B8-%D1%83%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9-php/</loc>
+    <lastmod>2011-03-20T20:04:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/01/php-strtotime-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0-%D1%81-%D0%B4%D0%B0%D1%82%D0%B0%D0%BC%D0%B8-%D1%81%D0%BE-%D1%81%D0%BB%D0%B5%D1%88%D0%B5%D0%BC-slash/</loc>
+    <lastmod>2011-01-29T12:48:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/12/virtual-box-%D0%BA%D0%B0%D0%BA-%D1%83%D0%B2%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80-%D0%B4%D0%B8%D1%81%D0%BA%D0%B0/</loc>
+    <lastmod>2010-12-11T23:29:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/10/%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-wsdl-%D0%B2%D0%BE-%D0%B2%D0%BD%D0%B5%D1%88%D0%BD%D0%B5%D0%BC/</loc>
+    <lastmod>2010-10-27T08:47:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/10/%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BA%D0%BE%D0%BB%D0%BE%D0%BD%D0%BE%D0%BA-%D0%B2-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B5/</loc>
+    <lastmod>2010-10-01T11:13:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/09/symfony-yaml-%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0/</loc>
+    <lastmod>2010-09-28T12:46:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/09/%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%BE%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-wsdl-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0%D0%BC/</loc>
+    <lastmod>2010-09-20T06:45:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/</loc>
+    <lastmod>2010-08-27T19:08:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2010/06/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-sfthumbnailplugin-%D0%BA%D0%B0%D0%BA-%D0%B2%D0%B8%D0%B4%D0%B6%D0%B5%D1%82%D0%B0/</loc>
+    <lastmod>2010-06-28T20:20:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2010-06-24T06:36:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/angular/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/angular/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/application/</loc>
+    <lastmod>2012-04-03T11:33:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/beta/</loc>
+    <lastmod>2012-07-04T20:39:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/bundle-alias/</loc>
+    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/closure/</loc>
+    <lastmod>2016-10-19T12:16:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/compile/</loc>
+    <lastmod>2013-01-24T22:04:10+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/composer/</loc>
+    <lastmod>2012-07-04T20:39:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/composer/</loc>
+    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/config/</loc>
+    <lastmod>2010-09-28T12:46:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/configure/</loc>
+    <lastmod>2013-01-24T22:04:10+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/continuous-integration/</loc>
+    <lastmod>2011-08-02T07:03:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/cookie/</loc>
+    <lastmod>2011-03-27T12:26:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/coordinates/</loc>
+    <lastmod>2013-09-24T20:50:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/cruise-control/</loc>
+    <lastmod>2011-08-02T07:03:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/custom/</loc>
+    <lastmod>2014-08-27T07:29:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/databases/</loc>
+    <lastmod>2014-05-16T09:15:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/debian/</loc>
+    <lastmod>2014-08-27T08:54:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/debian/</loc>
+    <lastmod>2017-02-08T05:33:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dev/</loc>
+    <lastmod>2012-07-04T20:39:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/distance/</loc>
+    <lastmod>2013-09-24T20:50:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/doctrine-2.3/</loc>
+    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/download/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/earth/</loc>
+    <lastmod>2013-09-24T20:50:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/earthbox/</loc>
+    <lastmod>2013-09-24T20:50:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/entity/</loc>
+    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/extend/</loc>
+    <lastmod>2012-04-18T12:57:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/extension/</loc>
+    <lastmod>2013-09-24T20:50:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/fatal-error/</loc>
+    <lastmod>2012-03-25T12:44:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/file/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/firefox/</loc>
+    <lastmod>2014-08-27T08:54:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/form/</loc>
+    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/functional-programming/</loc>
+    <lastmod>2016-10-19T12:16:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/geolocation/</loc>
+    <lastmod>2013-09-24T20:50:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/git/</loc>
+    <lastmod>2017-04-05T15:41:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/howto/</loc>
+    <lastmod>2012-07-07T19:57:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/html/</loc>
+    <lastmod>2010-10-01T11:13:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/import/</loc>
+    <lastmod>2010-10-27T08:47:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/installation/</loc>
+    <lastmod>2014-08-27T07:29:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/intl/</loc>
+    <lastmod>2013-01-24T22:04:10+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/java/</loc>
+    <lastmod>2014-08-27T08:54:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/java/</loc>
+    <lastmod>2014-08-27T08:54:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript/</loc>
+    <lastmod>2012-04-18T12:57:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/javascript/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/jdk/</loc>
+    <lastmod>2014-08-27T07:29:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/jqfileupload/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/jre/</loc>
+    <lastmod>2014-08-27T07:29:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/jvm/</loc>
+    <lastmod>2014-08-27T07:29:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/leading/</loc>
+    <lastmod>2012-04-18T12:57:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/macos/</loc>
+    <lastmod>2017-02-08T05:33:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/manual/</loc>
+    <lastmod>2014-08-27T07:29:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mb/</loc>
+    <lastmod>2013-01-24T22:04:10+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/module/</loc>
+    <lastmod>2012-03-25T12:44:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/music/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/my-audio/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/null/</loc>
+    <lastmod>2012-03-25T12:44:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/oracle/</loc>
+    <lastmod>2014-08-27T07:29:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pdo/</loc>
+    <lastmod>2013-01-24T22:04:10+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/php/</loc>
+    <lastmod>2016-10-19T12:16:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/php/</loc>
+    <lastmod>2016-10-19T12:16:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/php5.4/</loc>
+    <lastmod>2013-03-27T23:15:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/php56/</loc>
+    <lastmod>2016-01-05T10:50:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/playlist/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/plugin/</loc>
+    <lastmod>2014-08-27T08:54:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/plugins/</loc>
+    <lastmod>2010-06-28T20:20:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pma/</loc>
+    <lastmod>2011-03-27T12:26:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/postgis/</loc>
+    <lastmod>2013-09-24T20:50:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/postgres/</loc>
+    <lastmod>2013-09-24T20:50:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/postgresql/</loc>
+    <lastmod>2014-05-16T09:15:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2017-04-05T15:41:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/project/</loc>
+    <lastmod>2012-07-07T19:57:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/require/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/requirejs/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/requirejs/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-06-28T07:53:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/schema/</loc>
+    <lastmod>2010-10-27T08:47:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/security/</loc>
+    <lastmod>2017-02-08T05:33:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/serverside/</loc>
+    <lastmod>2012-04-03T11:33:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/session/</loc>
+    <lastmod>2011-03-27T12:26:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sfthumbnailplugins/</loc>
+    <lastmod>2010-06-28T20:20:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/space/</loc>
+    <lastmod>2012-04-18T12:57:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/spatial/</loc>
+    <lastmod>2013-09-24T20:50:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/squeeze/</loc>
+    <lastmod>2013-03-27T23:15:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/stability/</loc>
+    <lastmod>2012-07-04T20:39:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/stable/</loc>
+    <lastmod>2012-07-04T20:39:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/suhosin/</loc>
+    <lastmod>2012-03-25T12:44:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/symfony/</loc>
+    <lastmod>2012-07-07T19:57:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/symfony/</loc>
+    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/symfony-2.1/</loc>
+    <lastmod>2012-07-26T12:54:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/system/</loc>
+    <lastmod>2017-01-16T09:45:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/timeout/</loc>
+    <lastmod>2011-03-27T12:26:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/track-error/</loc>
+    <lastmod>2011-03-20T20:04:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/trailing/</loc>
+    <lastmod>2012-04-18T12:57:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/trim/</loc>
+    <lastmod>2012-04-18T12:57:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ubuntu-12.04-lts/</loc>
+    <lastmod>2016-01-05T10:50:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/update/</loc>
+    <lastmod>2012-07-04T20:39:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/upgrade/</loc>
+    <lastmod>2016-01-05T10:50:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/upload/</loc>
+    <lastmod>2014-05-16T10:18:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/vcs/</loc>
+    <lastmod>2017-04-05T15:41:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/virtualbox/</loc>
+    <lastmod>2010-12-11T23:29:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/vk/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/vkontakte/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/web-services/</loc>
+    <lastmod>2010-10-27T08:47:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/webservice/</loc>
+    <lastmod>2010-10-27T08:47:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/wheezy/</loc>
+    <lastmod>2014-08-27T07:29:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/widget/</loc>
+    <lastmod>2010-06-28T20:20:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/wsdl/</loc>
+    <lastmod>2010-09-20T06:45:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/wsld/</loc>
+    <lastmod>2010-10-27T08:47:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/xcache/</loc>
+    <lastmod>2012-03-25T12:44:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/xml/</loc>
+    <lastmod>2010-10-27T08:47:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/xml/</loc>
+    <lastmod>2011-03-20T20:04:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/xsd/</loc>
+    <lastmod>2010-10-27T08:47:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/yaml/</loc>
+    <lastmod>2010-09-28T12:46:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/yml/</loc>
+    <lastmod>2010-09-28T12:46:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%D0%B0%D1%83%D0%B4%D0%B8%D0%BE/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%D0%B1%D0%B5%D0%B7-%D1%80%D1%83%D0%B1%D1%80%D0%B8%D0%BA%D0%B8/</loc>
+    <lastmod>2013-01-24T22:04:10+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%D0%B2%D0%B5%D0%B1-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81/</loc>
+    <lastmod>2010-09-20T06:45:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%D0%B2%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%B8%D1%82%D1%8C/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B0/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0/</loc>
+    <lastmod>2010-09-28T12:46:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C-%D1%84%D0%B0%D0%B9%D0%BB/</loc>
+    <lastmod>2010-09-28T12:46:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%D0%BF%D0%BB%D0%B5%D0%B9%D0%BB%D0%B8%D1%81%D1%82/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C/</loc>
+    <lastmod>2012-08-06T21:52:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

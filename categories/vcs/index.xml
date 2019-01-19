@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vcs on Roman Dushko, Software Engineer</title>
+    <link>/categories/vcs/</link>
+    <description>Recent content in Vcs on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Apr 2017 15:41:37 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/vcs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git push to remote without creating local branch</title>
+      <link>/2017/04/git-push-to-remote-without-creating-local-branch/</link>
+      <pubDate>Wed, 05 Apr 2017 15:41:37 +0000</pubDate>
+      
+      <guid>/2017/04/git-push-to-remote-without-creating-local-branch/</guid>
+      <description>Little extremely handy trick for Git.
+If you need to modify something quickly in some(-body&amp;#8217;s) branch, e.g. in in open PR on GitHub, you don&amp;#8217;t need to usually create your local branch mirroring the remote one, right?
+Instead, you just checkout into remote branch:
+git checkout origin/branch-name , do you fixes/changes, commit them and now, the tricky thing, how do you push?
+As simple as:
+git push origin HEAD:refs/heads/branch-name You don&amp;#8217;t have traces in your local branches, and you pushed your modifications.</description>
+    </item>
+    
+    <item>
+      <title>How to specify custom ssh key while git clone from github</title>
+      <link>/2017/02/how-to-specify-custom-ssh-key-while-git-clone-from-github/</link>
+      <pubDate>Wed, 08 Feb 2017 05:33:57 +0000</pubDate>
+      
+      <guid>/2017/02/how-to-specify-custom-ssh-key-while-git-clone-from-github/</guid>
+      <description>If you need to provide some custom ssh key while cloning your repository from github (or pulling, whatsoever), run this command:
+&amp;lt;br /&amp;gt; ssh-agent $(eval `ssh-agent -s`; ssh-add ~/.ssh/{your-custom-keyfile}; git clone git@github.com:{username}/{repo-name}.git .)&amp;lt;br /&amp;gt; 
+Please note, you should replace `{strings}` with plain string values!</description>
+    </item>
+    
+    <item>
+      <title>Отменить git push</title>
+      <link>/2012/03/%D0%BE%D1%82%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-git-push/</link>
+      <pubDate>Thu, 22 Mar 2012 17:23:35 +0000</pubDate>
+      
+      <guid>/2012/03/%D0%BE%D1%82%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-git-push/</guid>
+      <description>Бывает такое, что вы сделали случайный коммит и запушили в общий репозиторий то, что не хотелось бы, скажем &amp;#8212; какие-то важные данные (пароль к какому-нибудь сервису и т.п.)
+Конечно, пока никто не заметил, всё еще можно отменить!
+Для этого необходимо использовать команду
+git push -f {remote_name} HEAD^:{branchName} Таким образом можно откатиться не только на один шаг (^), но на любое количество: HEAD^^ (HEAD~2, HEAD~n).
+Повторно можно &amp;#171;залить&amp;#187; уже изменения с учетом необходимых исправлений.</description>
+    </item>
+    
+  </channel>
+</rss>

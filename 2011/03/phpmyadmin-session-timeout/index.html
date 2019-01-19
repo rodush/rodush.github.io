@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>PHPMyAdmin session timeout | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">March 27, 2011</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">PHPMyAdmin session timeout</h1>
+  <div class="content">
+    <p>По-умолчанию время жизни сессии в новой инсталляции PhpMyAdmin и способе авторизации &#8216;cookie&#8217; составляет 1440 секунд (24 минуты). Т.е. после 24 минут бездействия следующее обращение приведёт пользователя на страницу авторизации. Чтобы увеличить время жизни сессии, необходимо установить значение переменной</p>
+
+<pre lang="PHP">$cfg['LoginCookieValidity'] = 1440 * 60; // 86400 means one day (24-hours)</pre>
+
+<p>, скажем в 60 раз, что составит сутки.</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

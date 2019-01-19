@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Roman Dushko, Software Engineer</title>
+    <link>/tags/java/</link>
+    <description>Recent content in Java on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Aug 2014 08:54:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Firefox Java Plugin — Debian Wheezy</title>
+      <link>/2014/08/firefox-java-plugin-debian-wheezy/</link>
+      <pubDate>Wed, 27 Aug 2014 08:54:00 +0000</pubDate>
+      
+      <guid>/2014/08/firefox-java-plugin-debian-wheezy/</guid>
+      <description>By default Firefox has no Java plugin because of security issues.
+One can install plugin by following next steps:
+ Exit Firefox browser if it is running
+ Make directory if it does not exist -&amp;gt; /usr/lib/mozilla/plugins
+ Make a symbolic link for libnpjp2.so file which resides in JRE directory, e.g.:
+  sudo ln -s /usr/lib/jvm/jdk1.8.0_20/jre/lib/amd64/libnpjp2.so /usr/lib/mozilla/plugins/libnpjp2.so  Please note, that amd64 is an architecture of the OS you have installed, possibly it could be i386 in your case.</description>
+    </item>
+    
+    <item>
+      <title>Install proprietary Oracle JDK in Debian 7.0 Wheezy</title>
+      <link>/2014/08/install-proprietary-oracle-jdk-in-debian-7-0-wheezy/</link>
+      <pubDate>Wed, 27 Aug 2014 07:29:58 +0000</pubDate>
+      
+      <guid>/2014/08/install-proprietary-oracle-jdk-in-debian-7-0-wheezy/</guid>
+      <description>This is a YAP (yet another post) about how one can manually install Oracle&amp;#8217;s proprietary JDK/JRE version (in Debian 7.0 Wheezy as an example).
+First of all, download fresh version of JDK/JRE from the Oracle website.
+Copy archive to desired location, in the following example we will use
+/usr/lib/jvm as an installation source directory.
+Unpack the archive and run next commands:
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk/bin/java 1071 sudo update-alternatives --install /usr/bin/javac javac /media/mydisk/jdk/javac 1071 sudo update-alternatives --install /usr/bin/jcontrol jcontrol /media/mydisk/jdk/bin/jcontrol 1071  You may need read man pages for update-alternatives to check out the parameters and what they mean.</description>
+    </item>
+    
+    <item>
+      <title>Установка сервера приложений Myna</title>
+      <link>/2012/04/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-myna/</link>
+      <pubDate>Tue, 03 Apr 2012 11:33:41 +0000</pubDate>
+      
+      <guid>/2012/04/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-myna/</guid>
+      <description>Myna &amp;#8212; это серверный javascript. Детальнее можно узнать здесь.
+Установка возможна двумя способами:
+ как обычный сервлет на любом Java сервере (Tomcat, JBoss, Glassfish, WebSphere, etc)
+ как отдельное приложение (в данном случае Tomcat уже включен в поставку).
+  На момент написания статьи последним выпущенными релизом была версия myna-1.0_beta_9. Пусть вас не пугает приставка beta &amp;#8212; авторы заявляют, что приложение очень стабильно и успешно работает на многих серверах в боевом режиме.</description>
+    </item>
+    
+  </channel>
+</rss>

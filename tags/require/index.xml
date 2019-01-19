@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Require on Roman Dushko, Software Engineer</title>
+    <link>/tags/require/</link>
+    <description>Recent content in Require on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 16 May 2014 10:18:44 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/require/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Having error while trying use jqFileUpload with RequireJS?</title>
+      <link>/2014/05/having-error-while-trying-use-jqfileupload-with-requirejs/</link>
+      <pubDate>Fri, 16 May 2014 10:18:44 +0000</pubDate>
+      
+      <guid>/2014/05/having-error-while-trying-use-jqfileupload-with-requirejs/</guid>
+      <description>Once upon a time, I needed to use jqFileUPload plugin (actually modified version which provides Angular&amp;#8217;s directive around native jqFileUpload plugin).
+In the same time, my Angular-base project was configured to be used together with RequireJS.
+I spend few ours trying to figure out what I was doing wrong &amp;#8212; why I was getting errors in my browser&amp;#8217;s console.
+Those errors were about something weird&amp;#8230; Something in `load-image-exif` and `load-image` files.</description>
+    </item>
+    
+  </channel>
+</rss>

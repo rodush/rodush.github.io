@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on Roman Dushko, Software Engineer</title>
+    <link>/tags/php/</link>
+    <description>Recent content in Php on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 19 Oct 2016 12:16:05 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Functional approach in PHP</title>
+      <link>/2016/10/functional-approach-in-php/</link>
+      <pubDate>Wed, 19 Oct 2016 12:16:05 +0000</pubDate>
+      
+      <guid>/2016/10/functional-approach-in-php/</guid>
+      <description>The code snippet below will only work in PHP-5.3+!.
+Isn&amp;#8217;t it the famous functional programming with functions as first class citizens, closures and other functional bla-bla?
+&amp;lt;?php function one($a = 0) { return function(callable $b) use ($a) { return call_user_func($b, $a); }; } print_r(call_user_func(one(1), function ($x) { return $x + 4; } ));  This was created just for fun. As you may see, in place of callable you can put any valid PHP callable, e.</description>
+    </item>
+    
+    <item>
+      <title>[SOLVED] Upgrading from PHP 5.5 to PHP 5.6 on Ubuntu 12.04 LTS</title>
+      <link>/2016/01/solved-upgrading-from-php-5-5-to-php-5-6-on-ubuntu-12-04-lts/</link>
+      <pubDate>Tue, 05 Jan 2016 10:50:58 +0000</pubDate>
+      
+      <guid>/2016/01/solved-upgrading-from-php-5-5-to-php-5-6-on-ubuntu-12-04-lts/</guid>
+      <description>Recently I had to upgrade PHP version on the build server based on Ubuntu 12.04 LTS to PHP 5.6 At that moment there was PHP 5.5 installed on the server. Everything should have been as easy and promising as described, for example, in this post. Yes, it was going well to the moment
+sudo apt-get dist-upgrade Then dpkg claimed unmet dependencies&amp;#8230; You know, as usual. I decided &amp;#8212; f&amp;#8230;k it, I will remove existing php and everything related.</description>
+    </item>
+    
+    <item>
+      <title>Как скомпилировать и установить php-5.4.x на Debian OS (squeeze)</title>
+      <link>/2013/01/%D0%BA%D0%B0%D0%BA-%D1%81%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%B8-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-php-5-4-x-%D0%BD%D0%B0-debia/</link>
+      <pubDate>Thu, 24 Jan 2013 22:04:10 +0000</pubDate>
+      
+      <guid>/2013/01/%D0%BA%D0%B0%D0%BA-%D1%81%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%B8-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-php-5-4-x-%D0%BD%D0%B0-debia/</guid>
+      <description>Недавно я попытался установить последнюю версию PHP 5.4.x (на момент написания статьи это было 5.4.10) на мою стабильную ОС Debian OS (v6.0-squeeze-32bit).
+Как вы возможно знаете, стабильная версия Debian имеет по-умолчанию в своих репозиториях версию PHP-5.3.4. Я же захотел использовать встроенный в PHP-5.4 веб-сервер.
+Тогда мне казалось, что установка PHP-5.4 будет более быстрым процессом, чем конфигурированию виртуального хоста Apache. Да, я настолько ленив! 🙂
+Что ж, забегая наберед, должен сообщить, что вся процедура заняла у меня 2-2.</description>
+    </item>
+    
+    <item>
+      <title>PHPMyAdmin session timeout</title>
+      <link>/2011/03/phpmyadmin-session-timeout/</link>
+      <pubDate>Sun, 27 Mar 2011 12:26:40 +0000</pubDate>
+      
+      <guid>/2011/03/phpmyadmin-session-timeout/</guid>
+      <description>По-умолчанию время жизни сессии в новой инсталляции PhpMyAdmin и способе авторизации &amp;#8216;cookie&amp;#8217; составляет 1440 секунд (24 минуты). Т.е. после 24 минут бездействия следующее обращение приведёт пользователя на страницу авторизации. Чтобы увеличить время жизни сессии, необходимо установить значение переменной
+$cfg[&#39;LoginCookieValidity&#39;] = 1440 * 60; // 86400 means one day (24-hours) , скажем в 60 раз, что составит сутки.</description>
+    </item>
+    
+  </channel>
+</rss>

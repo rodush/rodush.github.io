@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Install proprietary Oracle JDK in Debian 7.0 Wheezy | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">August 27, 2014</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Install proprietary Oracle JDK in Debian 7.0 Wheezy</h1>
+  <div class="content">
+    <p>This is a YAP (yet another post) about how one can manually install Oracle&#8217;s proprietary JDK/JRE version (in Debian 7.0 Wheezy as an example).</p>
+
+<p>First of all, download fresh version of JDK/JRE from the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" title="jdk8-downloads">Oracle website</a>.</p>
+
+<p>Copy archive to desired location, in the following example we will use</p>
+
+<pre>/usr/lib/jvm</pre>
+
+<p>as an installation source directory.</p>
+
+<p>Unpack the archive and run next commands:</p>
+
+<pre lang="bash">sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk/bin/java 1071
+sudo update-alternatives --install /usr/bin/javac javac /media/mydisk/jdk/javac 1071
+sudo update-alternatives --install /usr/bin/jcontrol jcontrol /media/mydisk/jdk/bin/jcontrol 1071
+</pre>
+
+<p>You may need read man pages for update-alternatives to check out the parameters and what they mean.</p>
+
+<p>Now, if you want freshly installed version of java/javac to be default in your system, run next commands:</p>
+
+<pre lang="bash">sudo update-alternatives --config java
+sudo update-alternatives --config javac
+sudo update-alternatives --config jcontrol
+</pre>
+
+<p>Follow the instructions issued by update-alternatives to select default version among the list of available installations.</p>
+
+<p>After that, check if everything worked fine by issuing commands</p>
+
+<pre lang="bash">java -version
+javac -version
+</pre>
+
+<p>You should see 1.8.0 for both.</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Описание типов данных для wsdl во внешнем файле | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">October 27, 2010</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Описание типов данных для wsdl во внешнем файле</h1>
+  <div class="content">
+    <p>Здесь я покажу пример описания типов во внешнем файле и подключении этого файла в wsdl-описании вашего веб-сервиса.</p>
+
+<p>Когда у вас относительно немного методов выставленных для веб-сервиса и нет каких-либо сложных custom структур-типов данных, то описание этих самых типов можно реализовать прямо в основном wsdl файле. Когда же количество методов с нестардантными параметрами уже значительно, то для удобства описание типов данных можно вынести во внешний файл.</p>
+
+<p>Обратите внимание, что этот импортируемый файл должен быть полноценным xml файлом &#8212; с блоком</p>
+
+<pre lang="xml"><?xml version="1.0" encoding="UTF-8"?></pre>
+
+<p>в начале документа.</p>
+
+<p>Дальше структура примерно следующая:</p>
+
+<pre lang="xml"><?xml version="1.0" encoding="UTF-8"?>
+&lt;xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:webservice.contentinn.com" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:yournamespace">
+  &lt;xsd:complexType name="AuthHeader">
+    &lt;xsd:sequence>
+      &lt;xsd:element name="company" type="xsd:string"/>
+      &lt;xsd:element name="username" type="xsd:string"/>
+      &lt;xsd:element name="password" type="xsd:string"/>
+    &lt;/xsd:sequence>
+  &lt;/xsd:complexType>
+  &lt;xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AuthHeaderElement" type="tns:AuthHeader"/>
+  ...........
+</pre>
+
+<p>Так как wsdl файл по сути своей та же схема, то подключение одного файла в другой выполняется обычным для xsd-файлов методом:</p>
+
+<pre lang="xml">&lt;import namespace="YOURNAMESPACE" schemaLocation="RELATIVE_PATH_TO_YOUR_SCHEMA_FILE"/>
+</pre>
+
+<p>Файл описания типов данных необходимо подключать в блоке <code>&lt;strong&gt;&lt;wsdl:types/&gt;&lt;/strong&gt;</code>:</p>
+
+<pre lang="xml">&lt;wsdl:types xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    &lt;xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2001/XMLSchema">
+      &lt;import namespace="urn:yournamespace" schemaLocation="wsdlTypes.xsd"/>
+    &lt;/xsd:schema>
+&lt;/wsdl:types>
+</pre>
+
+<p>У меня лично на первых порах некоторые сложности вызвало подключение файла с описанием типов данных в основной wsdl файл. Особое внимание в этом случае необходимо уделить namespace&#8217;ам (аттрибут <code>&lt;strong&gt;namespace&lt;/strong&gt;</code> тэга <code>&lt;strong&gt;import&lt;/strong&gt;</code>). А именно, чтобы значение аттрибута <code>namespace</code> точно соответствовало аттрибуту <code>&lt;strong&gt;targetNamespace&lt;/strong&gt;</code> в подключенном файле схемы. В нашем случае это значение <strong><em>urn:yournamespace</em></strong>.</p>
+
+<p>Вот и всё. Теперь описание типов видно в основном файле описания веб-сервиса.</p>
+
+<p>Удачи вам с &#171;выходом в мир&#187;!</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

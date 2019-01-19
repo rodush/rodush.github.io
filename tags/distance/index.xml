@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distance on Roman Dushko, Software Engineer</title>
+    <link>/tags/distance/</link>
+    <description>Recent content in Distance on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 24 Sep 2013 20:50:49 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/distance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Postgres and earthdistance extension</title>
+      <link>/2013/09/postgres-and-earthdistance-extension/</link>
+      <pubDate>Tue, 24 Sep 2013 20:50:49 +0000</pubDate>
+      
+      <guid>/2013/09/postgres-and-earthdistance-extension/</guid>
+      <description>First of all, let me describe how one can install extensions for your Postgresql.
+It depends whether you have version 8.4+ or 9.1+ installed.
+In following sections I will describe procedure related to Debian based OSes.
+First of all, you have to install contrib packages for corresponding version:
+root@debian:/home/web# apt-cache search postgres | grep contrib postgresql-contrib - additional facilities for PostgreSQL (supported version) postgresql-contrib-8.4 - additional facilities for PostgreSQL postgresql-contrib-9.1 - additional facilities for PostgreSQL  with command:</description>
+    </item>
+    
+  </channel>
+</rss>

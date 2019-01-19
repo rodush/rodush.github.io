@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bundle Alias on Roman Dushko, Software Engineer</title>
+    <link>/tags/bundle-alias/</link>
+    <description>Recent content in Bundle Alias on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 26 Jul 2012 12:54:31 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bundle-alias/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Form builder — entity field: «Class BundleAliasName:EntityClassName does not exist «</title>
+      <link>/2012/07/form-builder-entity-field-class-bundlealiasnameentityclassname-does-not-exist/</link>
+      <pubDate>Thu, 26 Jul 2012 12:54:31 +0000</pubDate>
+      
+      <guid>/2012/07/form-builder-entity-field-class-bundlealiasnameentityclassname-does-not-exist/</guid>
+      <description>После обновления symfony-2.1 до версии из транка (symfony-2.1.0-beta4) отвалилась форма, в которой я использовал поле типа entity, где в качестве класса сущности указал не полный путь к классу, а через bundle alias:
+$builder -add( &#39;field_name, &#39;entity&#39;, array( &#39;class&#39; = &#39;BundleAliasName:EntityClassName&#39;, &#39;multiple&#39; = true ) ) .....  Код выбрасывал исключение с сообщением
+ &amp;#171;Class BundleAliasName:EntityClassName does not exist&amp;#187;
+ Если прописать полный путь через пространство имен:
+array( &#39;class&#39; = &#39;Full\Bundle\Path\Entity\EntityClassName&#39;, )  то все работало хорошо.</description>
+    </item>
+    
+  </channel>
+</rss>
