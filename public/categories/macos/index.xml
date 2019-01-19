@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macos on Roman Dushko, Software Engineer</title>
+    <link>/categories/macos/</link>
+    <description>Recent content in Macos on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 08 Feb 2017 05:33:57 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to specify custom ssh key while git clone from github</title>
+      <link>/2017/02/how-to-specify-custom-ssh-key-while-git-clone-from-github/</link>
+      <pubDate>Wed, 08 Feb 2017 05:33:57 +0000</pubDate>
+      
+      <guid>/2017/02/how-to-specify-custom-ssh-key-while-git-clone-from-github/</guid>
+      <description>If you need to provide some custom ssh key while cloning your repository from github (or pulling, whatsoever), run this command:
+&amp;lt;br /&amp;gt; ssh-agent $(eval `ssh-agent -s`; ssh-add ~/.ssh/{your-custom-keyfile}; git clone git@github.com:{username}/{repo-name}.git .)&amp;lt;br /&amp;gt; 
+Please note, you should replace `{strings}` with plain string values!</description>
+    </item>
+    
+    <item>
+      <title>Bluetooth keyboard does not connect automatically to laptop with Mac OS Sierra</title>
+      <link>/2017/01/bluetooth-keyboard-does-not-connect-automatically-to-laptop-with-mac-os-sierra/</link>
+      <pubDate>Mon, 16 Jan 2017 09:45:53 +0000</pubDate>
+      
+      <guid>/2017/01/bluetooth-keyboard-does-not-connect-automatically-to-laptop-with-mac-os-sierra/</guid>
+      <description>Not sure if it started after upgrade to the latest version of MacOS Sierra 10.12, but I feel like so.
+My laptop loses connection to wireless keyboard very often and does not reconnect automatically. Turning on and off does not help.
+I tried to find an explanation and possible solution, and the only hint I found was to re-connect the keyboard.
+This is how you do it:
+ Call Keyboard preferences window by typing in [CMD] +[Space] -&amp;gt; keyboard[</description>
+    </item>
+    
+  </channel>
+</rss>

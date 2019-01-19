@@ -1,0 +1,282 @@
+<div class="container">
+  <!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+  <div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+  <main class="container">
+      
+      
+      <h1 class="title is-3">2017</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Apr 5</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="/2017/04/git-push-to-remote-without-creating-local-branch/">Git push to remote without creating local branch</a></h1>
+          <div class="content is-hidden-mobile">
+            Little extremely handy trick for Git.
+If you need to modify something quickly in some(-body&#8217;s) branch, e.g. in in open PR on GitHub, you don&#8217;t need to usually create your local branch mirroring the remote one, right?
+Instead, you just checkout into remote branch:
+git checkout origin/branch-name , do you fixes/changes, commit them and now, the tricky thing, how do you push?
+As simple …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="/2017/04/git-push-to-remote-without-creating-local-branch/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Feb 8</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="/2017/02/how-to-specify-custom-ssh-key-while-git-clone-from-github/">How to specify custom ssh key while git clone from github</a></h1>
+          <div class="content is-hidden-mobile">
+            If you need to provide some custom ssh key while cloning your repository from github (or pulling, whatsoever), run this command:
+&lt;br /&gt; ssh-agent $(eval `ssh-agent -s`; ssh-add ~/.ssh/{your-custom-keyfile}; git clone git@github.com:{username}/{repo-name}.git .)&lt;br /&gt; 
+Please note, you should replace `{strings}` with plain string values!
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jan 16</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="/2017/01/bluetooth-keyboard-does-not-connect-automatically-to-laptop-with-mac-os-sierra/">Bluetooth keyboard does not connect automatically to laptop with Mac OS Sierra</a></h1>
+          <div class="content is-hidden-mobile">
+            Not sure if it started after upgrade to the latest version of MacOS Sierra 10.12, but I feel like so.
+My laptop loses connection to wireless keyboard very often and does not reconnect automatically. Turning on and off does not help.
+I tried to find an explanation and possible solution, and the only hint I found was to re-connect the keyboard.
+This is how you do it:
+ Call Keyboard preferences …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="/2017/01/bluetooth-keyboard-does-not-connect-automatically-to-laptop-with-mac-os-sierra/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      
+      <h1 class="title is-3">2016</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Oct 19</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="/2016/10/functional-approach-in-php/">Functional approach in PHP</a></h1>
+          <div class="content is-hidden-mobile">
+            The code snippet below will only work in PHP-5.3+!.
+Isn&#8217;t it the famous functional programming with functions as first class citizens, closures and other functional bla-bla?
+&lt;?php function one($a = 0) { return function(callable $b) use ($a) { return call_user_func($b, $a); }; } print_r(call_user_func(one(1), function ($x) { return $x + 4; } ));  This was created just for fun. As you may …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="/2016/10/functional-approach-in-php/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jan 5</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="/2016/01/solved-upgrading-from-php-5-5-to-php-5-6-on-ubuntu-12-04-lts/">[SOLVED] Upgrading from PHP 5.5 to PHP 5.6 on Ubuntu 12.04 LTS</a></h1>
+          <div class="content is-hidden-mobile">
+            Recently I had to upgrade PHP version on the build server based on Ubuntu 12.04 LTS to PHP 5.6 At that moment there was PHP 5.5 installed on the server. Everything should have been as easy and promising as described, for example, in this post. Yes, it was going well to the moment
+sudo apt-get dist-upgrade Then dpkg claimed unmet dependencies&#8230; You know, as usual. I decided &#8212; f&#8230;k …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="/2016/01/solved-upgrading-from-php-5-5-to-php-5-6-on-ubuntu-12-04-lts/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      
+      <h1 class="title is-3">2014</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Aug 27</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="/2014/08/firefox-java-plugin-debian-wheezy/">Firefox Java Plugin — Debian Wheezy</a></h1>
+          <div class="content is-hidden-mobile">
+            By default Firefox has no Java plugin because of security issues.
+One can install plugin by following next steps:
+ Exit Firefox browser if it is running
+ Make directory if it does not exist -&gt; /usr/lib/mozilla/plugins
+ Make a symbolic link for libnpjp2.so file which resides in JRE directory, e.g.:
+  sudo ln -s /usr/lib/jvm/jdk1.8.0_20/jre/lib/amd64/libnpjp2.so …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="/2014/08/firefox-java-plugin-debian-wheezy/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Aug 27</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="/2014/08/install-proprietary-oracle-jdk-in-debian-7-0-wheezy/">Install proprietary Oracle JDK in Debian 7.0 Wheezy</a></h1>
+          <div class="content is-hidden-mobile">
+            This is a YAP (yet another post) about how one can manually install Oracle&#8217;s proprietary JDK/JRE version (in Debian 7.0 Wheezy as an example).
+First of all, download fresh version of JDK/JRE from the Oracle website.
+Copy archive to desired location, in the following example we will use
+/usr/lib/jvm as an installation source directory.
+Unpack the archive and run next commands:
+sudo …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="/2014/08/install-proprietary-oracle-jdk-in-debian-7-0-wheezy/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">May 16</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="/2014/05/having-error-while-trying-use-jqfileupload-with-requirejs/">Having error while trying use jqFileUpload with RequireJS?</a></h1>
+          <div class="content is-hidden-mobile">
+            Once upon a time, I needed to use jqFileUPload plugin (actually modified version which provides Angular&#8217;s directive around native jqFileUpload plugin).
+In the same time, my Angular-base project was configured to be used together with RequireJS.
+I spend few ours trying to figure out what I was doing wrong &#8212; why I was getting errors in my browser&#8217;s console.
+Those errors were about …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="/2014/05/having-error-while-trying-use-jqfileupload-with-requirejs/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">May 16</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="/2014/05/how-to-add-role-to-the-postgresql/">How to add role to the PostgreSQL</a></h1>
+          <div class="content is-hidden-mobile">
+            If you need have superuser access to PostgreSQL via command line psql utility, create needed username first:
+sudo -u postgres createuser NEEDED_USERNAME You will be asked whether role should be a superuser:
+ Shall the new role be a superuser? (y/n)
+ answer Y (yes) if so and hit Enter.
+Now you have NEEDED_USERNAME allowed to access databases as a superuser via psql.
+            
+          </div>
+      </article>
+      
+      
+      
+    </main>
+  <section class="section">
+  <div class="container">
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          
+          <a class="button is-rounded" disabled>
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a>
+          
+        </div>
+      </div>
+      <div class="level-right is-marginless">
+        <div class="level-item">
+          
+          <a class="button is-rounded" href="/page/2/">
+            Older
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+  <section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+
+</div>

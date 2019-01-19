@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Генерация колонок в таблице | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">October 1, 2010</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Генерация колонок в таблице</h1>
+  <div class="content">
+    <p>Иногда бывает необходимо динамически построить таблицу по имеющемуся массиву данных.</p>
+
+<p>Проблема заключается в правильной расстановке закрывающего и открывающего тега <code>&lt;tr&gt;</code> таблицы.</p>
+
+<p>Вот мое решение, скажем, для случая трех колонок:</p>
+
+<pre lang="PHP"><table cellpadding="0" cellspacing="0" class="withLowCells" border="0">
+  &lt; ?php $step = 0; ?>
+    &lt; ?php $colsPerRow = 3 ?>
+    &lt; ?php $stepsCount = sizeof($statuses) ?>
+    
+  
+  <tr>
+    &lt; ?php foreach ($statuses as $statusKey => $statusName): ?>
+        &lt; ?php if (0 == $step%$colsPerRow &#038;&#038; (0 &lt; $step)): // insert a new row each $colsPerRow iteration ?>
+        
+  </tr>
+  
+  <tr>
+    &lt; ?php endif; ?>
+        &lt; ?php if (($step + 1) == $stepsCount): ?>
+          &lt; ?php $colspan = $colsPerRow - $step%$colsPerRow; ?>
+        &lt; ?php endif; ?>
+        &lt; ?php // add colspan for last TD element to result with a valid table ?>
+        &lt;td <?php if (isset($colspan) &#038;&#038; (1 < $colspan)): ?>colspan="&lt; ?php echo $colspan ?>"&lt; ?php endif;?>>
+          &lt; ?php echo checkbox_tag('filters[service_status][' . $statusKey . ']', $statusKey, isset($filters['service_status'][$statusKey])) ?> -
+                
+    
+    <label for="filters_service_status_<?php echo $statusKey ?>" class="textTooltip" style="font-size: 11px; color: #000;" title="< ?php echo $statusName ?>">&lt; ?php echo $statusKey ?></label>
+        &lt;/td>
+        &lt; ?php $step++; // increment the step ?>
+      &lt; ?php endforeach; ?>
+      
+  </tr>
+  
+</table>
+</pre>
+
+<p>Если вы хотите, чтобы последняя ячейка не растягивалась на пустое место через colspan, а достраивалось недостающее число ячеек, то в блоке</p>
+
+<pre lang="PHP">&lt; ?php if (($step + 1) == $stepsCount): ?>
+  &lt; ?php $colspan = $colsPerRow - $step%$colsPerRow; ?>
+&lt; ?php endif; ?>
+</pre>
+
+<p><code>$colspan</code> нужно еще уменьшить на единицу</p>
+
+<p>и после закрывающего тега <code>&lt;/td&gt;</code> добавить блок кода</p>
+
+<pre lang="PHP">&lt; ?php if (isset($colspan) &#038;&#038; (1 &lt; $colspan)): ?>
+    &lt; ?php for ($i=0; $i &lt; $colspan; $i++): ?>
+      
+
+<td>
+  &nbsp;
+</td>
+    &lt; ?php endfor; ?>
+  &lt; ?php endif; ?>
+</pre>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Squeeze on Roman Dushko, Software Engineer</title>
+    <link>/tags/squeeze/</link>
+    <description>Recent content in Squeeze on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Mar 2013 23:15:34 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/squeeze/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PHP 5.4 установка из DotDeb</title>
+      <link>/2013/03/php-5-4-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8%D0%B7-dotdeb/</link>
+      <pubDate>Wed, 27 Mar 2013 23:15:34 +0000</pubDate>
+      
+      <guid>/2013/03/php-5-4-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8%D0%B7-dotdeb/</guid>
+      <description>Если Вам вдруг захотелось использовать последнюю версию php-5.4.x на Debian squeeze (где по-умолчанию из пакетов устанавливается php-5.3.x),
+будет проще и быстрее установить его с помощью apt-get.
+Первым делом необходимо добавить новые источники пакетов в файл sources.list:
+&amp;lt;br /&amp;gt; deb http://packages.dotdeb.org squeeze all&amp;lt;br /&amp;gt; deb-src http://packages.dotdeb.org squeeze all&amp;lt;br /&amp;gt; deb http://packages.dotdeb.org squeeze-php54 all&amp;lt;br /&amp;gt; deb-src http://packages.dotdeb.org squeeze-php54 all&amp;lt;br /&amp;gt; 
+Вы может получить такую ошибку при обновлении кеша:
+ W: GPG error: http://packages.</description>
+    </item>
+    
+  </channel>
+</rss>

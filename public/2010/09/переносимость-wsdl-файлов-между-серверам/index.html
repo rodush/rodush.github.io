@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Переносимость wsdl файлов между серверами | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">September 20, 2010</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Переносимость wsdl файлов между серверами</h1>
+  <div class="content">
+    <p>Думаю у многих, кто сталкивался с разработкой вебсервисов с описанием их через WSDL файлы, возникала проблема, когда при переносе с dev-сервера на prod-сервер приходилось менять путь к расположению веб-сервера, к примеру:</p>
+
+<pre lang="PHP">&lt;soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="http://localhost/soapServer.php"/>
+</pre>
+
+<p>или, скажем, когда урл сервера используется в качестве namaspace, и хочется, чтобы на прод-сервере фигурирувал именно его урл, а не какой-нибудь localhost.</p>
+
+<p>При переносе между серверами частенько забывается поменять упомянутые выше параметры wsdl файла и бывает так, что веб-сервис не хочет работать, пока об этом не вспомнишь.</p>
+
+<p>Во избежание таких ситуаций можно предложить простой, и довольно очевидный метод &#8212; использование РНР для генерации адреса сервера!</p>
+
+<p>Т.е. мы отдаем клиенту не WSDL в чистом виде, а результат, полученый после обработки его РНР интерпретатором. Тогда мы можем использовать РНР функции и встроенные переменные, в частности переменную $_SERVER, которая позволит нам получить необходимую информацию.</p>
+
+<p>Т.о., мы сможем написать путь к местоположению сервера как</p>
+
+<pre lang="PHP">&lt;soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="http://' . $_SERVER['SERVER_NAME'] . '/soapServer.php"/>
+</pre>
+
+<p>Вот и вся магия! Возможно, данная заметка кому-то будет полезной.</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

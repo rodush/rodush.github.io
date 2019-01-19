@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Composer — minimum-stability по-умолчанию считается stable | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">July 4, 2012</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Composer — minimum-stability по-умолчанию считается stable</h1>
+  <div class="content">
+    <p>Сегодня (4 июля 2012) Composer изменяет значение по-умолчанию свойства stability с dev на stable.</p>
+
+<p>Подробнее <a href="https://groups.google.com/forum/#!topic/composer-dev/_g3ASeIFlrc/discussion">здесь</a> и <a href="http://getcomposer.org/doc/04-schema.md#minimum-stability">здесь</a>.</p>
+
+<p>Что это значит? Что по-умолчанию Composer будет игнорировать пакеты RC, beta, alpha или dev.</p>
+
+<p>Столкнулся я с этим, когда попытался проапдейтить зависимости проекта, использующего symfony-2.1.x, которая на момент написания заметки находится на стадии бета-тестирования.</p>
+
+<p><code>&lt;br /&gt;
+rodush@debian:~/gtrs$ php composer.phar update&lt;br /&gt;
+Updating dependencies&lt;br /&gt;
+Your requirements could not be solved to an installable set of packages.&lt;br /&gt;
+</code></p>
+
+<p>Вот что подсказал скрипт:</p>
+
+<blockquote>
+<p>Potential causes:</p>
+
+<p>&#8212; A typo in the package name</p>
+
+<p>&#8212; The package is not available in a stable-enough version according to your minimum-stability setting</p>
+
+<p>see <a href="https://groups.google.com/d/topic/composer-dev/_g3ASeIFlrc/discussion">https://groups.google.com/d/topic/composer-dev/_g3ASeIFlrc/discussion</a> for more details.</p>
+</blockquote>
+
+<p>Чтобы обойти данную проблему, самый простой способ &#8212; это в файл composer.json добавить свойство</p>
+
+<p><code>&quot;minimum-stability&quot;: &quot;dev&quot;</code></p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

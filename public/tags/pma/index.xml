@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pma on Roman Dushko, Software Engineer</title>
+    <link>/tags/pma/</link>
+    <description>Recent content in Pma on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 27 Mar 2011 12:26:40 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/pma/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PHPMyAdmin session timeout</title>
+      <link>/2011/03/phpmyadmin-session-timeout/</link>
+      <pubDate>Sun, 27 Mar 2011 12:26:40 +0000</pubDate>
+      
+      <guid>/2011/03/phpmyadmin-session-timeout/</guid>
+      <description>По-умолчанию время жизни сессии в новой инсталляции PhpMyAdmin и способе авторизации &amp;#8216;cookie&amp;#8217; составляет 1440 секунд (24 минуты). Т.е. после 24 минут бездействия следующее обращение приведёт пользователя на страницу авторизации. Чтобы увеличить время жизни сессии, необходимо установить значение переменной
+$cfg[&#39;LoginCookieValidity&#39;] = 1440 * 60; // 86400 means one day (24-hours) , скажем в 60 раз, что составит сутки.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Composer on Roman Dushko, Software Engineer</title>
+    <link>/tags/composer/</link>
+    <description>Recent content in Composer on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 04 Jul 2012 20:39:30 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/composer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Composer — minimum-stability по-умолчанию считается stable</title>
+      <link>/2012/07/composer-minimum-stability-%D0%BF%D0%BE-%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E-%D1%81%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82%D1%81%D1%8F-stable/</link>
+      <pubDate>Wed, 04 Jul 2012 20:39:30 +0000</pubDate>
+      
+      <guid>/2012/07/composer-minimum-stability-%D0%BF%D0%BE-%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E-%D1%81%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D1%82%D1%81%D1%8F-stable/</guid>
+      <description>Сегодня (4 июля 2012) Composer изменяет значение по-умолчанию свойства stability с dev на stable.
+Подробнее здесь и здесь.
+Что это значит? Что по-умолчанию Composer будет игнорировать пакеты RC, beta, alpha или dev.
+Столкнулся я с этим, когда попытался проапдейтить зависимости проекта, использующего symfony-2.1.x, которая на момент написания заметки находится на стадии бета-тестирования.
+&amp;lt;br /&amp;gt; rodush@debian:~/gtrs$ php composer.phar update&amp;lt;br /&amp;gt; Updating dependencies&amp;lt;br /&amp;gt; Your requirements could not be solved to an installable set of packages.</description>
+    </item>
+    
+  </channel>
+</rss>

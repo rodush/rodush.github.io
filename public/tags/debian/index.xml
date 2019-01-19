@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debian on Roman Dushko, Software Engineer</title>
+    <link>/tags/debian/</link>
+    <description>Recent content in Debian on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Aug 2014 08:54:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Firefox Java Plugin — Debian Wheezy</title>
+      <link>/2014/08/firefox-java-plugin-debian-wheezy/</link>
+      <pubDate>Wed, 27 Aug 2014 08:54:00 +0000</pubDate>
+      
+      <guid>/2014/08/firefox-java-plugin-debian-wheezy/</guid>
+      <description>By default Firefox has no Java plugin because of security issues.
+One can install plugin by following next steps:
+ Exit Firefox browser if it is running
+ Make directory if it does not exist -&amp;gt; /usr/lib/mozilla/plugins
+ Make a symbolic link for libnpjp2.so file which resides in JRE directory, e.g.:
+  sudo ln -s /usr/lib/jvm/jdk1.8.0_20/jre/lib/amd64/libnpjp2.so /usr/lib/mozilla/plugins/libnpjp2.so  Please note, that amd64 is an architecture of the OS you have installed, possibly it could be i386 in your case.</description>
+    </item>
+    
+    <item>
+      <title>Install proprietary Oracle JDK in Debian 7.0 Wheezy</title>
+      <link>/2014/08/install-proprietary-oracle-jdk-in-debian-7-0-wheezy/</link>
+      <pubDate>Wed, 27 Aug 2014 07:29:58 +0000</pubDate>
+      
+      <guid>/2014/08/install-proprietary-oracle-jdk-in-debian-7-0-wheezy/</guid>
+      <description>This is a YAP (yet another post) about how one can manually install Oracle&amp;#8217;s proprietary JDK/JRE version (in Debian 7.0 Wheezy as an example).
+First of all, download fresh version of JDK/JRE from the Oracle website.
+Copy archive to desired location, in the following example we will use
+/usr/lib/jvm as an installation source directory.
+Unpack the archive and run next commands:
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk/bin/java 1071 sudo update-alternatives --install /usr/bin/javac javac /media/mydisk/jdk/javac 1071 sudo update-alternatives --install /usr/bin/jcontrol jcontrol /media/mydisk/jdk/bin/jcontrol 1071  You may need read man pages for update-alternatives to check out the parameters and what they mean.</description>
+    </item>
+    
+    <item>
+      <title>PHP 5.4 установка из DotDeb</title>
+      <link>/2013/03/php-5-4-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8%D0%B7-dotdeb/</link>
+      <pubDate>Wed, 27 Mar 2013 23:15:34 +0000</pubDate>
+      
+      <guid>/2013/03/php-5-4-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8%D0%B7-dotdeb/</guid>
+      <description>Если Вам вдруг захотелось использовать последнюю версию php-5.4.x на Debian squeeze (где по-умолчанию из пакетов устанавливается php-5.3.x),
+будет проще и быстрее установить его с помощью apt-get.
+Первым делом необходимо добавить новые источники пакетов в файл sources.list:
+&amp;lt;br /&amp;gt; deb http://packages.dotdeb.org squeeze all&amp;lt;br /&amp;gt; deb-src http://packages.dotdeb.org squeeze all&amp;lt;br /&amp;gt; deb http://packages.dotdeb.org squeeze-php54 all&amp;lt;br /&amp;gt; deb-src http://packages.dotdeb.org squeeze-php54 all&amp;lt;br /&amp;gt; 
+Вы может получить такую ошибку при обновлении кеша:
+ W: GPG error: http://packages.</description>
+    </item>
+    
+    <item>
+      <title>Для PHP-5.4 Debian — нет suhosin, xcache, xdebug расширений</title>
+      <link>/2012/03/%D0%B4%D0%BB%D1%8F-php-5-4-debian-%D0%BD%D0%B5%D1%82-suhosin-xcache-xdebug-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B9/</link>
+      <pubDate>Sun, 25 Mar 2012 12:44:23 +0000</pubDate>
+      
+      <guid>/2012/03/%D0%B4%D0%BB%D1%8F-php-5-4-debian-%D0%BD%D0%B5%D1%82-suhosin-xcache-xdebug-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B9/</guid>
+      <description>Сегодня проапгрейдил свою Debian OS 6.0 (настроено apt-pinning).
+Среди прочих апдейтов при выполнении dist-upgrade привалили и обновления для ряда установленных модулей php5. Обновился и сам PHP, собственно до версии 5.4.0-2. Но&amp;#8230; тут начались непонятные проблемы &amp;#8212; ни один локальный сайт не работал! В логах были непонятные ошибки, скажем, для сайта, основанного на фреймворке YII было сообщение:
+[Sun Mar 25 13:32:51 2012] [error] [client 127.0.0.1] PHP Fatal error: Call to undefined function (null)() in /home/web/ccc/frontend/index.</description>
+    </item>
+    
+  </channel>
+</rss>

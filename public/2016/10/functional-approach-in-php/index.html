@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Functional approach in PHP | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">October 19, 2016</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Functional approach in PHP</h1>
+  <div class="content">
+    <p>The code snippet below will only work in PHP-5.3+!.</p>
+
+<p>Isn&#8217;t it the famous functional programming with <em>functions as first class citizens</em>, closures and other functional bla-bla?</p>
+
+<pre lang="php">&lt;?php
+
+function one($a = 0) {
+    return function(callable $b) use ($a) {
+        return call_user_func($b, $a);
+    };
+}
+
+print_r(call_user_func(one(1), function ($x) { return $x + 4; } ));
+</pre>
+
+<p>This was created just for fun. As you may see, in place of callable you can put any valid PHP callable, e.g.in a form <code>['Class', 'method']</code></p>
+
+<p>Use your imagination for other real things, but also try to stay not cursed later by those who will inherit your untraversable codebase :LOL:</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

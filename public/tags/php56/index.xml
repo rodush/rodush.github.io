@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php56 on Roman Dushko, Software Engineer</title>
+    <link>/tags/php56/</link>
+    <description>Recent content in Php56 on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 05 Jan 2016 10:50:58 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/php56/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[SOLVED] Upgrading from PHP 5.5 to PHP 5.6 on Ubuntu 12.04 LTS</title>
+      <link>/2016/01/solved-upgrading-from-php-5-5-to-php-5-6-on-ubuntu-12-04-lts/</link>
+      <pubDate>Tue, 05 Jan 2016 10:50:58 +0000</pubDate>
+      
+      <guid>/2016/01/solved-upgrading-from-php-5-5-to-php-5-6-on-ubuntu-12-04-lts/</guid>
+      <description>Recently I had to upgrade PHP version on the build server based on Ubuntu 12.04 LTS to PHP 5.6 At that moment there was PHP 5.5 installed on the server. Everything should have been as easy and promising as described, for example, in this post. Yes, it was going well to the moment
+sudo apt-get dist-upgrade Then dpkg claimed unmet dependencies&amp;#8230; You know, as usual. I decided &amp;#8212; f&amp;#8230;k it, I will remove existing php and everything related.</description>
+    </item>
+    
+  </channel>
+</rss>

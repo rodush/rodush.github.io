@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Генерация CSR файла | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">August 17, 2011</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Генерация CSR файла</h1>
+  <div class="content">
+    <p>CSR файл можно сгенерировать с помощью утилиты OpenSSL.</p>
+
+<blockquote>
+<p><code>openssl req -newkey rsa:2048 -keyout private_key.pem -out server.csr</code></p>
+</blockquote>
+
+<p>Здесь <strong>req</strong> команда управления сертификатами x.509,</p>
+
+<p><em>-newkey</em> &#8212; нам нужен новый ключ</p>
+
+<p><em>rsa</em> &#8212; алгорит шифрования, <em>2048</em> &#8212; длина ключа. Для подписи сертификатов после 2010 года требуется такая длина! До 2010 года разрешено использовать 1024 битный ключ.</p>
+
+<p><em>-keyout</em> &#8212; путь к файлу ключа, который будет храниться на сервере</p>
+
+<p><em>-out</em> &#8212; путь к файлу запроса сертификата (csr)</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

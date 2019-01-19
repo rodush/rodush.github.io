@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>[SOLVED] Upgrading from PHP 5.5 to PHP 5.6 on Ubuntu 12.04 LTS | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">January 5, 2016</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">[SOLVED] Upgrading from PHP 5.5 to PHP 5.6 on Ubuntu 12.04 LTS</h1>
+  <div class="content">
+    <p>Recently I had to upgrade PHP version on the build server based on Ubuntu 12.04 LTS to PHP 5.6 At that moment there was PHP 5.5 installed on the server. Everything should have been as easy and promising as described, for example, in <a href="http://joshtronic.com/2014/09/14/upgrade-php-53-to-php-56-on-ubuntu-1204-lts/" title="PHP 5.3 to PHP 5.6 on Ubuntu 12.04">this post</a>. Yes, it was going well to the moment</p>
+
+<pre lang="bash">sudo apt-get dist-upgrade</pre>
+
+<p>Then dpkg claimed unmet dependencies&#8230; You know, as usual. I decided &#8212; f&#8230;k it, I will remove existing php and everything related. Simple removal with</p>
+
+<pre lang="bash">sudo apt-get remove php*</pre>
+
+<p>did not work fine and stuck on removing <em>phpmyadmin</em>.</p>
+
+<p>That guysexited with an error code 10 being reported from its post-remove script. After pretty short googling, I found <a href="http://ubuntuforums.org/showthread.php?t=881086">the solution which worked</a> for me.</p>
+
+<p>The similar shit happened with <em>php5-imagick</em> package, so the solution I used was similar to phpmyadmin removal. Afterwards, I checked for presence anything starting with or inlcuding <em>php</em>:</p>
+
+<pre lang="bash">sudo dpkg -l | grep php</pre>
+
+<p>Everything was clean. OK, here we go&#8230;</p>
+
+<pre lang="php">sudo apt-get clean && sudo apt-get autoclean
+sudo apt-get udpate && sudo apt-get upgrade && sudo apt-get dist-upgrade
+</pre>
+
+<p>&#8230;and still the same error in result:</p>
+
+<blockquote>
+<p>Reading package lists&#8230; Done Building dependency tree Reading state information&#8230; Done Some packages could not be installed. This may mean that you have requested an impossible situation or if you are using the unstable distribution that some required packages have not yet been created or been moved out of Incoming. The following information may help to resolve the situation: The following packages have unmet dependencies: php5 : Depends: libapache2-mod-php5 (&gt;= 5.6.16+dfsg-2+deb.sury.org~precise+1~) but it is not going to be installed or libapache2-mod-php5filter (&gt;= 5.6.16+dfsg-2+deb.sury.org~precise+1~) but it is not going to be installed or php5-cgi (&gt;= 5.6.16+dfsg-2+deb.sury.org~precise+1~) but it is not going to be installed or php5-fpm (&gt;= 5.6.16+dfsg-2+deb.sury.org~precise+1~) but it is not going to be installed E: Unable to correct problems, you have held broken packages.</p>
+</blockquote>
+
+<p>I tried install with <strong>-f</strong> flag, package-by-package. Nothing worked. The final unmet dependency was:</p>
+
+<pre lang="bash">sudo apt-get -f install php5-json
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ php5-json : Depends: phpapi-20121212
+E: Unable to correct problems, you have held broken packages.
+</pre>
+
+<p>And here I stuck, as googling at this point didn&#8217;t help me at all&#8230; I visited the <a href="https://launchpad.net/~ondrej/+archive/ubuntu/php5-5.6">home of php5.6 PPA</a> hoping to find something there. And a brilliant idea came to my mind &#8212; I should check APT&#8217;s sources list! I saw this files inside <strong>/etc/apt/sources.list.d</strong>:</p>
+
+<pre lang="bash">/etc/apt/sources.list.d$ ll
+total 32
+drwxr-xr-x 2 root root 4096 Jan  5 11:12 ./
+drwxr-xr-x 6 root root 4096 Jan  5 11:11 ../
+-rw-r--r-- 1 root root  138 Jan  5 10:32 chris-lea-node_js-precise.list
+-rw-r--r-- 1 root root  138 Jan  5 10:32 chris-lea-node_js-precise.list.save
+-rw-r--r-- 1 root root   60 Jan  5 10:32 nginx-stable-lucid.list
+-rw-r--r-- 1 root root   60 Jan  5 10:32 nginx-stable-lucid.list.save
+-rw-r--r-- 1 root root  134 Jan  5 10:32 ondrej-php5-5_6-precise.list
+-rw-r--r-- 1 root root  134 Jan  5 10:32 ondrej-php5-5_6-precise.list.save
+-rw-r--r-- 1 root root  126 Jan  5 10:32 ondrej-php5-precise.list
+-rw-r--r-- 1 root root  126 Jan  5 10:32 ondrej-php5-precise.list.save
+</pre>
+
+<p>I realised, the problem could be that packages were overwritten from older php-5.5, which apparently was installed manually to the server some time earlier. Once I removed these two files:</p>
+
+<blockquote>
+<p>ondrej-php5-precise.list ondrej-php5-precise.list.save</p>
+</blockquote>
+
+<p>and updated apt one more time, I was able to install PHP 5.6 as usual:</p>
+
+<pre lang="bash">sudo apt-get install php5
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  shtool libc-client2007e node-node-uuid libicu52 libicu48 libv8-3.7.12.22 libmcrypt4 libt1-5 mlock libssl-dev libvpx1 libssl-doc zlib1g-dev libgd3 libev4 libv8-dev libc-ares2 libev-dev
+  libc-ares-dev
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  libapache2-mod-php5 php5-cli php5-json php5-readline
+Suggested packages:
+  php-pear
+The following NEW packages will be installed:
+  libapache2-mod-php5 php5 php5-cli php5-json php5-readline
+0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 5,575 kB of archives.
+After this operation, 18.9 MB of additional disk space will be used.
+Do you want to continue [Y/n]? Y</pre>
+
+<p>The main idea of this story, before adding new custom repository for PHP, make sure you removed any other old ones! Good luck and happy coding!</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project on Roman Dushko, Software Engineer</title>
+    <link>/tags/project/</link>
+    <description>Recent content in Project on Roman Dushko, Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 07 Jul 2012 19:57:18 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Как обновить проект с symfony-2.0 до symfony-2.1</title>
+      <link>/2012/07/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D1%81-symfony-2-0-%D0%B4%D0%BE-symfony-2-1/</link>
+      <pubDate>Sat, 07 Jul 2012 19:57:18 +0000</pubDate>
+      
+      <guid>/2012/07/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D1%81-symfony-2-0-%D0%B4%D0%BE-symfony-2-1/</guid>
+      <description>Изначально я создавал свой проект на версии symfony 2.0 без vendors (standard edition). Все зависимости были установлены через
+php bin/vendors install Проект находился в git-репозитории.
+Сразу оговорка &amp;#8212; на момент написания статьи версия symfony 2.1 находилась в стадии бета-тестирования.
+Тем не менее, основная тенденция уже была понятна и значительных изменений в АПИ не предвиделось.
+Одно из ключевых нововведений в symfony 2.1 &amp;#8212; использование Composer.
+На вебсайте фреймворка Symfony можно найти описание процесса создания нового проекта, но нет информации как обновить существующий.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Symfony, Yaml отключение файла | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">September 28, 2010</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Symfony, Yaml отключение файла</h1>
+  <div class="content">
+    <p>Бывает так, что в некоторых конфигурационных файлах для представления view.yml необходимо отключить некоторые из файлов &#8212; css или javascript. Как известно, массив в yml можно определить как</p>
+
+<pre lang="YAML">key:
+  - value1.css
+  - value2.css
+  - value3.css
+</pre>
+
+<p>Отлючается определенный файл с помощью директивы &#171;-&#187; (обычный дефис).</p>
+
+<p>Иногда при отключении файла можно случайно либо по незнанию некорректно поставить прочерк (между знаком отключения и название файла появится пробел), т.е., к примеру при желании отключить второй файл value2.css мы напишем:</p>
+
+<pre lang="YAML">key:
+  - value1.css
+  - - value2.css
+  - value3.css
+</pre>
+
+<p>В таком случае наша директива не сработает.</p>
+
+<p>Корректно писать так:</p>
+
+<pre lang="YAML">key:
+  - value1.css
+  - -value2.css
+  - value3.css
+</pre>
+
+<p>Об этом явно говорится в документации. Но часто бывает так, что кто ж её читает, когда есть &#171;гугль в помощь&#187;!</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

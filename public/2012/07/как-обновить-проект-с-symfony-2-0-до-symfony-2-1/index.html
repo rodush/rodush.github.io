@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Как обновить проект с symfony-2.0 до symfony-2.1 | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">July 7, 2012</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Как обновить проект с symfony-2.0 до symfony-2.1</h1>
+  <div class="content">
+    <p>Изначально я создавал свой проект на версии symfony 2.0 без vendors (standard edition). Все зависимости были установлены через</p>
+
+<pre lang="bash">php bin/vendors install</pre>
+
+<p>Проект находился в git-репозитории.</p>
+
+<p>Сразу оговорка &#8212; на момент написания статьи версия symfony 2.1 находилась в стадии бета-тестирования.</p>
+
+<p>Тем не менее, основная тенденция уже была понятна и значительных изменений в АПИ не предвиделось.</p>
+
+<p>Одно из ключевых нововведений в symfony 2.1 &#8212; использование <a href="http://getcomposer.org/" title="Composer" target="_blank">Composer</a>.</p>
+
+<p>На вебсайте фреймворка Symfony можно найти описание процесса создания <strong>нового</strong> проекта, но нет информации как обновить существующий.</p>
+
+<p>Итак, начнем-с.</p>
+
+<p>Изначально я попытался просто скопировать содержимое файла composer.json, находящегося в директории фреймворка Symnofy на github, и выполнить команду</p>
+
+<pre lang="bash">php composer.phar update</pre>
+
+<p>но там нет всех зависимостей, необходимых для нормального функционирования проекта.</p>
+
+<p>Потому я просто решил создать новый &#171;пустой&#187; проект:</p>
+
+<pre lang="bash">php composer.phar create-project symfony/framework-standard-edition path/</pre>
+
+<p>в отдельной ветке git-репозитория и потом перенести изменения из ветки с версией symfony-2.0.</p>
+
+<p>Признаюсь, что пришлось порешать конфликты в файлах apps/AppKernel.php, файлах config.yml, security.yml и других.</p>
+
+<p>Но это не было слишком сложным заданием.</p>
+
+<p>Также необходимо проапгрейдить все дополнительные bundle, которые вы используете до соответствующих версий под symfony-2.1</p>
+
+<p>К примеру, для FOSUserBundle (<a href="https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/index.md#installation">https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/index.md#installation</a>)</p>
+
+<pre lang="yml">{
+    "require": {
+        "friendsofsymfony/user-bundle": "*"
+    }
+}
+</pre>
+
+<p>и далее выполнить команду</p>
+
+<pre lang="bash">php composer.phar update</pre>
+
+<p>Таже необходимо сделать изменения согласно <a href="https://github.com/symfony/symfony/blob/master/UPGRADE-2.1.md">этой инструкции</a> в файлах форм и других местах. Тут уже дело персональное &#8212; смотря кто какие фичи использовал в своем проекте.</p>
+
+<p>Таким образом, после всех проделанных манипуляций проект запустился успешно.</p>
+
+<p>Из видимых изменений &#8212; добавили красивостей к web-debug-toolbar &#8212; появились тултипы со сводной информацией по каждому из разделов, которые показываются при наведении мышью на соответствующую иконку.</p>
+
+<p>П.С.: Вот на днях встретил другой вариант апгрейда до symfony-2.1: <a href="http://buildthedamnproduct.com/upgrading-symfony-to-21-10415">http://buildthedamnproduct.com/upgrading-symfony-to-21-10415</a></p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+

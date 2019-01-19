@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Для PHP-5.4 Debian — нет suhosin, xcache, xdebug расширений | Roman Dushko, Software Engineer</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href=""><h1 class="title is-3">Roman Dushko, Software Engineer</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">March 25, 2012</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Для PHP-5.4 Debian — нет suhosin, xcache, xdebug расширений</h1>
+  <div class="content">
+    <p>Сегодня проапгрейдил свою Debian OS 6.0 (настроено apt-pinning).</p>
+
+<p>Среди прочих апдейтов при выполнении dist-upgrade привалили и обновления для ряда установленных модулей php5.  Обновился и сам PHP, собственно до версии 5.4.0-2. Но&#8230; тут начались непонятные проблемы &#8212; ни один локальный сайт не работал! В логах были непонятные ошибки, скажем, для сайта, основанного на фреймворке  YII было сообщение:</p>
+
+<pre>[Sun Mar 25 13:32:51 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to undefined function (null)() in /home/web/ccc/frontend/index.php on line 4</pre>
+
+<p>А на той строке 4 ничего не было особенного, окромя dirname(__FILE__)!</p>
+
+<p>Порыскав-поискав в интернете похожие ошибки, не нашел ничего. Запостил баг на php.net.</p>
+
+<p>Но дело-то неприятное! Ничегошеньки ведь не работает&#8230;</p>
+
+<p>Начал копаться дальше. Попробовал запустить скрипты php из консоли, дабы проверить &#8212; неужто dirname() убрали? 🙂 И обнаружил еще ряд замечательных уведомлений warnings:</p>
+
+<blockquote>
+<p>rodush@rdushko:/var/www$ php test.php</p>
+
+<p>Failed loading /usr/lib/php5/20090626+lfs/xdebug.so: /usr/lib/php5/20090626+lfs/xdebug.so: cannot open shared object file: No such file or directory</p>
+
+<p>PHP Warning: PHP Startup: Unable to load dynamic library &#8216;/usr/lib/php5/20100525+lfs/suhosin.so&#8217; &#8212; /usr/lib/php5/20100525+lfs/suhosin.so: cannot open shared object file: No such file or directory in Unknown on line 0</p>
+
+<p>PHP Warning: PHP Startup: Unable to load dynamic library &#8216;/usr/lib/php5/20100525+lfs/xhprof.so&#8217; &#8212; /usr/lib/php5/20100525+lfs/xhprof.so: cannot open shared object file: No such file or directory in Unknown on line 0</p>
+</blockquote>
+
+<p>А дальше директива dirname() отработала и подключился файл, который я подключал.</p>
+
+<p>Заглянув в директорию, указанную в сообщении, я обнаружил, что таких библиотек действительно нету!</p>
+
+<p>Пока решил не морочить голову: допишут &#8212; обновлюсь; решил убрать конфиги php для данных библиотек.</p>
+
+<p>Они расположены в директории /etc/php5/conf.d/</p>
+
+<p>просто переименовал все конфиги, на которые не пришли обновления файлы с суффиксом &#171;old&#187; (на будущее пригодятся :), думаю)</p>
+
+<blockquote>
+<p>suhosin.ini.old xdebug.ini.old xcache.ini.old xhprof.ini.old</p>
+</blockquote>
+
+<p>Попробовал вызов из консоли &#8212; не ругается php. Попробовал зайти на сайты в броузере и &#8212; о чудо! &#8212; всё работает!!</p>
+
+<p>Вот такие вот причуды могут быть, если php ругается на невозможность подключить дополнительные модули-библиотеки.</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+
