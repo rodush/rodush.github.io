@@ -1,23 +1,20 @@
 ---
-title: symfony 2.0 FOSUserBundle — ошибка «Could not load type»
-author: admin
-type: post
-date: 2012-06-19T10:05:33+00:00
-url: /2012/06/symfony-2-0-fosuserbundle-ошибка-could-not-load-type/
-vsw_pmvw_video_source:
-  - YouTube
+author: rodush
 categories:
-  - PHP
-  - symfony
-
+- PHP
+- symfony
+date: '2012-06-19T10:05:33+00:00'
+title: Symfony 2.0 FOSUserBundle — ошибка «Could not load type»
+url: /2012/06/symfony-2-0-fosuserbundle-ошибка-could-not-load-type/
 ---
-Если вы используете FOSUserBundle вместе с symfony 2.0 и вам понадобилось переопределить какую-либо из форм, идущих &#171;в комплекте&#187; с этим плагином,
+
+Если вы используете `FOSUserBundle` вместе с symfony 2.0 и вам понадобилось переопределить какую-либо из форм, идущих &#171;в комплекте&#187; с этим плагином,
   
 то, без сомнения, вы прочитали эту заметку: https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/overriding_forms.md
   
-После обновления вашей страницы может случиться прискорбная ситуация &#8212; сообщение об ошибке &#171;Could not load type &#8230;.&#187; (вместо многоточия ваш alias для кастомной формы).
+После обновления вашей страницы может случиться прискорбная ситуация &#8212; сообщение об ошибке &#171;Could not load type &#8230;.&#187; (вместо многоточия ваш _alias_ для кастомной формы).
   
-Вроде бы и в файле app/config.yml все верно с отступами (имеется ввиду конфигурация fos_user сервиса), и файл конфигурации вашего сервиса service.xml (service.yml) (в CustomUserBundle) описан правильно, и везде совпадает alias, getName() и т.п&#8230;. а все та же ошибка. Бывало? Не беда! 🙂 Есть решение вашей проблемы! Читайте далее, и все окажется просто!
+Вроде бы и в файле app/config.yml все верно с отступами (имеется ввиду конфигурация fos_user сервиса), и файл конфигурации вашего сервиса `service.xml` (или `service.yml`) (в CustomUserBundle) описан правильно, и везде совпадает alias, getName() и т.п&#8230;. а все та же ошибка. Бывало? Не беда! 🙂 Есть решение вашей проблемы! Читайте далее, и все окажется просто!
 
 Чтобы понимать и правильно использовать services и dependency injection в symfony 2.x, крайне рекомендую прочитать [это][1] и [это][2]. Суть в том, что для того, чтобы фреймворк symfony увидел ваши сервисы и расширения, необходимо предоставить информацию о конфигурации вашего bundle.
   
@@ -29,12 +26,12 @@ categories:
   
 Пример:
   
-<code lang="yml">&lt;br />
-imports:&lt;br />
-    - { resource: parameters.ini }&lt;br />
-    - { resource: security.yml }&lt;br />
-    - { resource: @CustomUserBundle/Resources/config/services.xml }&lt;br />
-</code>
+```yaml
+imports:
+    - { resource: parameters.ini }
+    - { resource: security.yml }
+    - { resource: @CustomUserBundle/Resources/config/services.xml }
+```
   
 2. Семантическое описание конфигурации.
   

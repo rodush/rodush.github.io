@@ -1,18 +1,44 @@
-url = "https://www.rodush.com"
-name = "Roman Dushko, Software Engineer"
-title = "Roman Dushko, Software Engineer"
-description = "Roman Dushko — Fullstack Developer — Роман Душко — RoDush - Personal Blog"
+locale = "en"
+theme = "PaperMod"
+preserveTaxonomyNames = true
 
-theme = "charaka"
+baseUrl = "https://www.rodush.com"
+name = "Roman Dushko - Software Engineering Leader"
+title = "Roman Dushko - Personal blog"
+description = "Personal blog of Roman Dushko — Software Engineering Leader with 2 decades of hands-on experience"
 
-[[params.social]]
-  url = "https://github.com/rodush"
-  fa_icon = "fab fa-github"
+enableRobotsTXT = true
+enableEmoji = true
 
-[[params.social]]
-  url = "https://www.linkedin.com/in/roman-dushko/"
-  fa_icon = "fab fa-linkedin-in"
+[params]
+author = "rodush"
+env = "production"
+ShowShareButtons = true
+ShareButtons = ["linkedin", "twitter", "telegram"]
 
-[[params.social]]
-  url = "https://twitter.com/RDushko"
-  fa_icon = "fab fa-twitter"
+[params.homeInfoParams]
+Title = "Hi there, :wave:!"
+Content = """
+Welcome to my personal space in Internet!
+
+I occasionally post here and on Medium.
+You can find my super, old and by now mostly irrelevant pasts from the past,
+as well as recent thoughts.
+"""
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/rodush"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/roman-dushko/"
+
+[[params.socialIcons]]
+name = "x"
+url = "https://x.com/RDushko"
+
+[[params.socialIcons]]
+name = "medium"
+url = "https://medium.com/@rodush"
+
