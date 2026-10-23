@@ -114,8 +114,7 @@ jobs:
 
       - name: Build
         run: |
-          echo "Building the project in ${pwd}..."
-          echo ls -la
+          echo "Building the project..."
           hugo build \
             --gc \
             --minify \
@@ -138,7 +137,7 @@ jobs:
     needs: build
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: "https://www.rodush.com"
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
