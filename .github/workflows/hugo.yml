@@ -114,7 +114,8 @@ jobs:
 
       - name: Build
         run: |
-          echo "Building the project..."
+          echo "Building the project in ${pwd}..."
+          echo ls -la
           hugo build \
             --gc \
             --minify \
