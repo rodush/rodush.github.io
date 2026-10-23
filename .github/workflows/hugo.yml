@@ -118,7 +118,7 @@ jobs:
           hugo build \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --baseURL "www.rodush.com" \
             --cacheDir "${{ runner.temp }}/.cache/hugo"
 
       - name: Cache save
