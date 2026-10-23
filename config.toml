@@ -21,9 +21,11 @@ Title = "Hi there, :wave:!"
 Content = """
 Welcome to my personal space in Internet!
 
-I occasionally post here and on Medium.
-You can find my super, old and by now mostly irrelevant pasts from the past,
-as well as recent thoughts.
+I occasionally post my thoughts and how-to's here and on Medium.
+
+Among the fresh materials (which will be coming hopefully more often),
+you can also find my superold and by now mostly irrelevant posts from the past -
+those are fun to read :joy:, I seem to have had a personal style back then!
 """
 
 [[params.socialIcons]]
