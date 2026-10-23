@@ -10,11 +10,13 @@ description = "Personal blog of Roman Dushko — Software Engineering Leader wit
 enableRobotsTXT = true
 enableEmoji = true
 
+
 [params]
 author = "rodush"
 env = "production"
 ShowShareButtons = true
 ShareButtons = ["linkedin", "twitter", "telegram"]
+images = ["static/favicon-96x96.png"]
 
 [params.homeInfoParams]
 Title = "Hi there, :wave:!"
