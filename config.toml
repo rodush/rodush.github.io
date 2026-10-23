@@ -16,7 +16,7 @@ enableEmoji = true
   ShowReadingTime = true
   ShowShareButtons = true
   ShareButtons = ["linkedin", "twitter", "telegram"]
-  images = ["cover.png"]
+  images = ["images/rodush-og.png"]
   description = "Personal blog of Roman Dushko — Software Engineering Leader with 2 decades of hands-on experience"
 
 [params.homeInfoParams]
