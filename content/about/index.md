@@ -27,6 +27,10 @@ The most challenging project I would consider so far was DAZN (www.dazn.com) - P
 
 Currently I am working as an Engineering Manager / Engineering Tech Lead / Engineering Team Lead.
 
+I enjoy learning new technologies and programming languages, and still keep my hands dirty while tinkering with side projects.
+
+My dream domain / area to work in would be - robotics and IoT. Somehow I haven't had a chance to work with those, most probably because I don't have experience with the serious programming languages like C/C++ or low-level Java.
+
 ## Tech stack and skills
 
 Usually I am building web based solutions, mostly with **NodeJS** ecosystem. Yet I am not hesitant to pick any other technology stack if task requires it. Being a quick learner, also with many year
@@ -56,11 +60,18 @@ Usually I am building web based solutions, mostly with **NodeJS** ecosystem. Yet
 - GCP (used few services, but can make a sense of many others, comparing to AWS counterparts)
 - GitHub (Actions, Workflows), GitLab, Jenkins, Drone
 - Terraform, Serverless, AWS CDK, Ansible, Puppet
+- Docker, Kubernetes
 
 ### Observability
 
 - NewRelic, DataDog, Grafana, Sentry
-- Logz.io, LogStash, Humio / Falcon
+- Logz.io, Falcon LogScale
+
+### AI/LLM
+
+- Github Copilot, ChatGPT / Codex, Claude Code
+- LangChain, OpenChain
+- PromptFoo
 
 ### Architecture and software design
 
