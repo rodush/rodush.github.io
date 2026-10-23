@@ -5,23 +5,24 @@ preserveTaxonomyNames = true
 baseUrl = "https://www.rodush.com"
 name = "Roman Dushko - Software Engineering Leader"
 title = "Roman Dushko - Personal blog"
-description = "Personal blog of Roman Dushko — Software Engineering Leader with 2 decades of hands-on experience"
 
 enableRobotsTXT = true
 enableEmoji = true
 
-
 [params]
-author = "rodush"
-env = "production"
-ShowShareButtons = true
-ShareButtons = ["linkedin", "twitter", "telegram"]
-images = ["static/favicon-96x96.png"]
+  author = "rodush"
+  env = "production"
+  keywords = ["blog", "about"]
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShareButtons = ["linkedin", "twitter", "telegram"]
+  images = ["favicon-96x96.png"]
+  description = "Personal blog of Roman Dushko — Software Engineering Leader with 2 decades of hands-on experience"
 
 [params.homeInfoParams]
-Title = "Hi there, :wave:!"
-Content = """
-Welcome to my personal space in Internet!
+  Title = "Hi there, :wave:!"
+  Content = """
+  Welcome to my personal space in Internet!
 
 I occasionally post my thoughts and how-to's here and on Medium.
 
@@ -31,18 +32,18 @@ those are fun to read :joy:, I seem to have had a personal style back then!
 """
 
 [[params.socialIcons]]
-name = "github"
-url = "https://github.com/rodush"
+  name = "github"
+  url = "https://github.com/rodush"
 
 [[params.socialIcons]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/roman-dushko/"
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/roman-dushko/"
 
 [[params.socialIcons]]
-name = "x"
-url = "https://x.com/RDushko"
+  name = "x"
+  url = "https://x.com/RDushko"
 
 [[params.socialIcons]]
-name = "medium"
-url = "https://medium.com/@rodush"
+  name = "medium"
+  url = "https://medium.com/@rodush"
 
