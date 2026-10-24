@@ -30,13 +30,13 @@ We will be using modern technique of publishing the website by means of Github A
 Find whatever works best for you in your region, I am not advising anything particular.
 1. Computer with, preferrably, unix-based operating system. For the sake of this post I am using Linux Mint with the default `bash` terminal.
 
-## Setup computer for work
+## Set up computer for work
 
 On your computer you will need to have Go programming language installed. It is used to convert `.md` files of your blog posts into HTML, as well as processing other supplementary files - images, CSS, JS, and few others). Follow instructions [here](https://go.dev/doc/install).
 
 You need to have [hugo](https://gohugo.io/installation/) installed. Default installation instructions will advise you to use your system package manger, like `homebrew` for MacOS, or `apt` for Ubuntu family. What I noticed is that it does not install the latest version of `hugo` out of its default repositories. So my advice would be to grab the freshest and latest version from the hugo's [Releases](https://github.com/gohugoio/hugo/releases) page directly.
 
-## Setup Github repository
+## Set up Github repository
 
 If you have your personal _Free_ Gihub account, you will have to make your resitory "public" in order to use Github Pages.
 
@@ -53,7 +53,7 @@ Under **"Custom domain"** section specify your custom domain name. Once clicked 
 Essentially, in your control panel of the domain registrant you should configure records to look like this:
 ![DNS configuration for Github Pages](/images/cname+a-records-github-dns.png).
 
-# Creating your blog
+# Create your blog
 
 For your Hugo-based blog (or site), you need to pick some [theme](https://themes.gohugo.io/). Quite simplistic but very popular one is a [PaperMod](https://themes.gohugo.io/themes/hugo-papermod/). The great news is that **all** hugo themes **have to be made free**, following the MIT license. Not like for [Astro](https://astro.build/themes/). But of course, paid themes are much more polished and :cool:-looking! Even though even for Astro you may find some [free themes](https://astro.build/themes/1/?search=&price%5B%5D=free) as well.
 
@@ -70,11 +70,23 @@ I will not be repeating how to create Hugo site or content, you can find all the
 
 I will show you how to add theme as a git submodule though, and how to check that it actually is registered correctly.
 
+## Add Theme
+
 ```sh
 git submodule add git@github.com:adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
 where `themes` is the directory which will hold your theme's cloned files.
+
+Then in your `.gitmodules` file you should see an entry:
+
+```
+[submodule "themes/charaka"]
+  path = themes/charaka
+  url = https://github.com/natarajmb/charaka-hugo-theme.git
+```
+
+Make sure you've committed and pusehd both - `.gitmodules` and `themes/PaperMod`!
 
 Next time, when you are cloning your repository on another clean machine, you will need to clone the content including the submodules:
 
@@ -94,12 +106,26 @@ you should see something like:
 Synchronizing submodule url for 'themes/PaperMod'
 ```
 
-and in your `.gitmodules` file you should see an entry:
+Configure theme in your `config.toml` file:
 
-```
-[submodule "themes/charaka"]
-  path = themes/charaka
-  url = https://github.com/natarajmb/charaka-hugo-theme.git
+```toml
+# other settings
+theme = PaperMod
+# other settings
 ```
 
-Make sure you've committed both.
+## Configure Github Actions
+
+Create file `.github/workflows/hugo.yml` and put there content which you find on the Hugo's website under [Procedures](https://gohugo.io/host-and-deploy/deploy-to-github-pages/#step-2).
+
+Once you've committed and pushed everything to remote repository, the workflow will trigger, and if all good, it will build and publish your blog!
+
+The result of successful pipeline should look like this:
+![Successful execution of Build and Deploy workflow in Github Actions](/images/gha-workflow-success.png)
+
+Now, go to your custom domain and see if blog loaded.\
+
+**Congratulations** :tada:!
+
+And Happy Blogging :keyboard:!
+
