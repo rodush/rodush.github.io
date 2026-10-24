@@ -77,6 +77,7 @@ Usually I am building web based solutions, mostly with **NodeJS** ecosystem. Yet
 
 - Micro-Services, SOA
 - DDD, OOP
+- REST, GraphQL, AsyncAPI, Pub/Sub, WebSockets
 
 ### Methodologies
 
