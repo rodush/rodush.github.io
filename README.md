@@ -4,7 +4,7 @@ Personal blog of Roman Dushko.
 
 # Tech Stack
 
-Uses [Hugo](https://gohugo.io/) blog engine with [PaperMode](https://github.com/adityatelange/hugo-PaperMod) theme. 
+Uses [Hugo](https://gohugo.io/) blog engine with [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
 Hosted at [GitHub Pages](https://docs.github.com/en/pages).
 
 ## Prerequisites

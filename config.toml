@@ -3,7 +3,7 @@ theme = "PaperMod"
 preserveTaxonomyNames = true
 
 baseUrl = "https://www.rodush.com"
-name = "Roman Dushko - Software Engineering Leader"
+name = "Roman Dushko - Software Engineering Leader - Tech Enthusiast"
 title = "Roman Dushko - Personal blog"
 
 enableRobotsTXT = true
@@ -12,7 +12,7 @@ enableEmoji = true
 [params]
   author = "rodush"
   env = "production"
-  keywords = ["blog", "about"]
+  keywords = ["blog", "software", "engineering", "leadership", "AI", "howto"]
   ShowReadingTime = true
   ShowShareButtons = true
   ShareButtons = ["linkedin", "twitter", "telegram"]
@@ -22,12 +22,12 @@ enableEmoji = true
 [params.homeInfoParams]
   Title = "Hi there, :wave:!"
   Content = """
-  Welcome to my personal space in Internet!
+Welcome to my personal space in Internet!
 
 I occasionally post my thoughts and how-to's here and on Medium.
 
 Among the fresh materials (which will be coming hopefully more often),
-you can also find my superold and by now mostly irrelevant posts from the past -
+you can also find my super old (and by now mostly irrelevant :facepalm:) posts from the past -
 those are fun to read :joy:, I seem to have had a personal style back then!
 """
 
