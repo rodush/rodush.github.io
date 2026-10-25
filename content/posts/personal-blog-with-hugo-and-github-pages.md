@@ -9,7 +9,6 @@ tags:
   - github
   - pages
   - blog
-draft: true
 ---
 
 In this post I would like to share how to setup personal blog pretty much for free,
@@ -28,7 +27,7 @@ We will be using modern technique of publishing the website by means of Github A
 1. Once signed up, create repository called `<your-github-username>.github.io`. Yes, it needs to be called exactly like that!
 1. \* _Custom domain name (it's optional, but looks much nicer than the default Github Page's domain name)_\
 Find whatever works best for you in your region, I am not advising anything particular.
-1. Computer with, preferrably, unix-based operating system. For the sake of this post I am using Linux Mint with the default `bash` terminal.
+1. Computer with, preferably, unix-based operating system. For the sake of this post I am using Linux Mint with the default `bash` terminal.
 
 ## Set up computer for work
 
@@ -38,7 +37,7 @@ You need to have [hugo](https://gohugo.io/installation/) installed. Default inst
 
 ## Set up Github repository
 
-If you have your personal _Free_ Gihub account, you will have to make your resitory "public" in order to use Github Pages.
+If you have your personal _Free_ Github account, you will have to make your repository "public" in order to use Github Pages.
 
 Scroll down to the very bottom of the [Settings](https://github.com/<your-github-username>/<your-github-username.github.io/settings) page, where under the **"Danger zone"** you will see the `[Change visibility]` button. Click it and follow the on-screen instructions. Make sure repository is (made) public.
 ![Make Repository Public](/images/settings-make-repo-public.png).
@@ -46,7 +45,7 @@ Scroll down to the very bottom of the [Settings](https://github.com/<your-github
 While in the `Settings`, click the [Pages](https://github.com/<your-github-username>/<your-github-username.github.io/settings/pages) link in the left navigation panel:
 ![Github Pages settings page](/images/settings-pages.png)
 
-Find the **"Build and deployment"** section, and as **Source** select _Github Actoins_, like on the screenshot above.
+Find the **"Build and deployment"** section, and as **Source** select _Github Actions_, like on the screenshot above.
 
 Under **"Custom domain"** section specify your custom domain name. Once clicked `Save` button it will initiate the DNS Check. You need to connect the dots by teaching your domain name provider to talk to Github Actions. It is all described in the GH's pages' documentation - [Configuring an apex domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
 
@@ -86,7 +85,7 @@ Then in your `.gitmodules` file you should see an entry:
   url = https://github.com/natarajmb/charaka-hugo-theme.git
 ```
 
-Make sure you've committed and pusehd both - `.gitmodules` and `themes/PaperMod`!
+Make sure you've committed and pushed both - `.gitmodules` and `themes/PaperMod`!
 
 Next time, when you are cloning your repository on another clean machine, you will need to clone the content including the submodules:
 
