@@ -6,8 +6,8 @@ categories:
   - blog
 tags:
   - hugo
-  - github
-  - pages
+  - "github"
+  - PaperMod
   - blog
 ---
 
@@ -16,8 +16,8 @@ using [Github Pages](https://pages.github.com) for hosting and personal site eng
 
 You may only need to pay costs of the custom domain name, if you want URL to be something different than `<username>.github.io` (default domain of your website hosted on Github Pages).
 
-You might wonder, how this post is different from many other resources available on Internet, including video's like [this](https://www.youtube.com/watch?v=LIFvgrRxdt4) or [this](https://www.youtube.com/watch?v=_QSr2_pxIJs)  on YouTube.\
-In many cases, it will repeat what's been mentioned already, but also it uses simpler setup with just one repository.
+You might wonder, how this post is different from many other resources available on Internet, including video's on YouTube like [this](https://www.youtube.com/watch?v=LIFvgrRxdt4) or [this](https://www.youtube.com/watch?v=_QSr2_pxIJs).\
+In majority, this post will indeed repeat what's been mentioned already. Approached mentioned here uses only one repository! It is a simpler setup compared to old-school approach which required 2 repositories: one for your "dirty" content, and another one &mdash; for your generated blog content, that's what the 1st video is about).
 
 We will be using modern technique of publishing the website by means of Github Actions (Workflows), like in the 2nd video link I mentioned above, so every time you push changes to your `main` branch, updates are automatically published.
 
@@ -31,7 +31,7 @@ Find whatever works best for you in your region, I am not advising anything part
 
 ## Set up computer for work
 
-On your computer you will need to have Go programming language installed. It is used to convert `.md` files of your blog posts into HTML, as well as processing other supplementary files - images, CSS, JS, and few others). Follow instructions [here](https://go.dev/doc/install).
+On your computer you will need to have Go programming language installed. It is used to convert `.md` files of your blog posts into HTML, as well as processing other supplementary files - images, CSS, JS, and few others. Follow instructions [here](https://go.dev/doc/install).
 
 You need to have [hugo](https://gohugo.io/installation/) installed. Default installation instructions will advise you to use your system package manger, like `homebrew` for MacOS, or `apt` for Ubuntu family. What I noticed is that it does not install the latest version of `hugo` out of its default repositories. So my advice would be to grab the freshest and latest version from the hugo's [Releases](https://github.com/gohugoio/hugo/releases) page directly.
 
@@ -39,8 +39,9 @@ You need to have [hugo](https://gohugo.io/installation/) installed. Default inst
 
 If you have your personal _Free_ Github account, you will have to make your repository "public" in order to use Github Pages.
 
-Scroll down to the very bottom of the [Settings](https://github.com/<your-github-username>/<your-github-username.github.io/settings) page, where under the **"Danger zone"** you will see the `[Change visibility]` button. Click it and follow the on-screen instructions. Make sure repository is (made) public.
-![Make Repository Public](/images/settings-make-repo-public.png).
+Scroll down to the very bottom of the [Settings](https://github.com/<your-github-username>/<your-github-username.github.io/settings) page, where under the **"Danger zone"** you will see the `[Change visibility]` button. Click it and follow the on-screen instructions. Make sure the repository is (made) public.
+![Make Repository Public](/images/settings-make-repo-public.png)
+
 
 While in the `Settings`, click the [Pages](https://github.com/<your-github-username>/<your-github-username.github.io/settings/pages) link in the left navigation panel:
 ![Github Pages settings page](/images/settings-pages.png)
@@ -50,7 +51,7 @@ Find the **"Build and deployment"** section, and as **Source** select _Github Ac
 Under **"Custom domain"** section specify your custom domain name. Once clicked `Save` button it will initiate the DNS Check. You need to connect the dots by teaching your domain name provider to talk to Github Actions. It is all described in the GH's pages' documentation - [Configuring an apex domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
 
 Essentially, in your control panel of the domain registrant you should configure records to look like this:
-![DNS configuration for Github Pages](/images/cname+a-records-github-dns.png).
+![DNS configuration for Github Pages](/images/cname+a-records-github-dns.png)
 
 # Create your blog
 
@@ -113,6 +114,8 @@ theme = PaperMod
 # other settings
 ```
 
+Now you can start adding content files. Again, just follow Hugo's documentation for this.
+
 ## Configure Github Actions
 
 Create file `.github/workflows/hugo.yml` and put there content which you find on the Hugo's website under [Procedures](https://gohugo.io/host-and-deploy/deploy-to-github-pages/#step-2).
@@ -122,9 +125,6 @@ Once you've committed and pushed everything to remote repository, the workflow w
 The result of successful pipeline should look like this:
 ![Successful execution of Build and Deploy workflow in Github Actions](/images/gha-workflow-success.png)
 
-Now, go to your custom domain and see if blog loaded.\
+Go to your custom blog URL and see if the blog loaded. I suppose it did.
 
-**Congratulations** :tada:!
-
-And Happy Blogging :keyboard:!
-
+**Congratulations** :tada: and happy blogging :keyboard:!
