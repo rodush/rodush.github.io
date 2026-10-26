@@ -1,9 +1,13 @@
 ---
 author: rodush
 categories:
-- System
-- VirtualBox
+  - Workspace
+  - HowTo
+tags:
+  - "Operating System"
+  - VirtualBox
 date: '2010-12-11T23:29:21+00:00'
+hiddenInHomeList: "true"
 title: Virtual box — как увеличить размер диска
 url: /2010/12/virtual-box-как-увеличить-размер-диска/
 ---

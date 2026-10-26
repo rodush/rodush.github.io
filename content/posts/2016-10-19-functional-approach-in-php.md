@@ -1,17 +1,18 @@
 ---
 author: rodush
 categories:
-- PHP
+- Programming
 date: '2016-10-19T12:16:05+00:00'
+hiddenInHomeList: "true"
 tags:
-- closure
-- functional programming
-- php
+  - closure
+  - "functional programming"
+  - fp
+  - php
 title: Functional approach in PHP
-
 url: /2016/10/functional-approach-in-php/
-
 ---
+
 The code snippet below will only work in PHP-5.3+!.
   
 Isn&#8217;t it the famous functional programming with _functions as first class citizens_, closures and other functional bla-bla?

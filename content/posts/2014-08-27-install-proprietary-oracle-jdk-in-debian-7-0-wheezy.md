@@ -1,21 +1,22 @@
 ---
 author: rodush
 categories:
-- Debian
-- Java
-- System
+  - Programming
+  - Workspace
+  - HowTo
 date: '2014-08-27T07:29:58+00:00'
+hiddenInHomeList: "true"
 tags:
-- custom
-- debian
-- installation
-- java
-- jdk
-- jre
-- jvm
-- manual
-- oracle
-- wheezy
+  - custom
+  - debian
+  - installation
+  - java
+  - jdk
+  - jre
+  - jvm
+  - manual
+  - oracle
+  - wheezy
 title: Install proprietary Oracle JDK in Debian 7.0 Wheezy
 url: /2014/08/install-proprietary-oracle-jdk-in-debian-7-0-wheezy/
 ---

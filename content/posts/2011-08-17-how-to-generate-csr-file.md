@@ -1,8 +1,8 @@
 ---
 categories:
-- security
-- system
+  - Security
 date: '2011-08-17T14:23:26+00:00'
+hiddenInHomeList: "true"
 title: How to generate CSR file
 
 ---

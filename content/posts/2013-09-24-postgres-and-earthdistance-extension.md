@@ -1,20 +1,21 @@
 ---
 author: rodush
-categories:
-- Databases
-- Debian
-- PostgreSQL
 date: '2013-09-24T20:50:49+00:00'
+hiddenInHomeList: "true"
+categories:
+  - Programming
+  - Databases
 tags:
-- coordinates
-- distance
-- earth
-- earthbox
-- extension
-- geolocation
-- postgis
-- postgres
-- spatial
+  - coordinates
+  - distance
+  - earth
+  - earthbox
+  - extension
+  - geolocation
+  - postgis
+  - postgres
+  - postgresql
+  - spatial
 title: Postgres and earthdistance extension
 url: /2013/09/postgres-and-earthdistance-extension/
 ---

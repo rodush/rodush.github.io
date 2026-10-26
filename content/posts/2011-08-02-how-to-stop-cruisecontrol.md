@@ -1,8 +1,10 @@
 ---
 author: rodush
 date: '2011-08-02T07:03:15+00:00'
+hiddenInHomeList: "true"
 categories:
-  - howto
+  - HowTo
+  - Programming
 tags:
   - ci/cd
   - "cruise control"

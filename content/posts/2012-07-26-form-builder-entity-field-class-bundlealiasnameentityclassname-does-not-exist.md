@@ -1,16 +1,17 @@
 ---
 author: rodush
 categories:
-- composer
-- PHP
-- symfony
+  - Programming
 date: '2012-07-26T12:54:31+00:00'
+hiddenInHomeList: "true"
 tags:
-- bundle alias
-- doctrine-2.3
-- entity
-- form
-- symfony-2.1
+  - PHP
+  - doctrine
+  - entity
+  - form
+  - symfony
+  - upgrade
+  - error
 title: 'Form builder — entity field: «Class BundleAliasName:EntityClassName does not exist «'
 url: /2012/07/form-builder-entity-field-class-bundlealiasnameentityclassname-does-not-exist/
 ---

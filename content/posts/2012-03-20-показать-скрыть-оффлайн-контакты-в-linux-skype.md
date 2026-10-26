@@ -1,8 +1,12 @@
 ---
 author: rodush
 categories:
-- Без рубрики
+  - HowTo
+  - Workspace
+tags:
+  - skype
 date: '2012-03-20T11:33:07+00:00'
+hiddenInHomeList: "true"
 title: Показать / скрыть оффлайн контакты в Linux Skype
 url: /2012/03/показать-скрыть-оффлайн-контакты-в-linux-skype/
 ---

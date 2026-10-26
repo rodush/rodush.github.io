@@ -1,14 +1,16 @@
 ---
 author: rodush
 categories:
-  - howto
+  - Security
+  - HowTo
 tags:
   - Debian
   - GIT
   - MacOS
-  - Security
   - VCS
+  - SSH
 date: '2017-02-08T05:33:57+00:00'
+hiddenInHomeList: "true"
 title: How to specify custom ssh key while git clone from github
 url: /2017/02/how-to-specify-custom-ssh-key-while-git-clone-from-github/
 ---

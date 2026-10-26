@@ -2,7 +2,6 @@
 date: 2026-10-22T16:30:00+0200
 title: '/whoami'
 description: 'Roman Dushko - Engineering Lead, Engineering Manager - Professional profile'
-type: home
 menus:
   - main
   - footer

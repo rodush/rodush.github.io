@@ -1,13 +1,15 @@
 ---
 author: rodush
 categories:
-  - howto
+  - HowTo
+  - Databases
 tags:
   - databases
   - Debian
   - PostgreSQL
   - system
 date: '2014-05-16T09:15:01+00:00'
+hiddenInHomeList: "true"
 title: How to add role to the PostgreSQL
 url: /2014/05/how-to-add-role-to-the-postgresql/
 ---

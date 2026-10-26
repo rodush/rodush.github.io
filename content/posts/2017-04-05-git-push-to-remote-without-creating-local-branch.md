@@ -6,6 +6,7 @@ tags:
   - GIT
   - VCS
 date: '2017-04-05T15:41:37+00:00'
+hiddenInHomeList: "true"
 title: Git push to remote without creating local branch
 url: /2017/04/git-push-to-remote-without-creating-local-branch/
 ---

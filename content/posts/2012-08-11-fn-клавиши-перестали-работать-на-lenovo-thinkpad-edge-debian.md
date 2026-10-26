@@ -1,9 +1,15 @@
 ---
 author: rodush
 categories:
-- Debian
-- System
+  - OS
+  - Workspace
+  - Troubleshooting
+tags:
+  - Debian
+  - Fn
+  - Laptop
 date: '2012-08-11T07:12:13+00:00'
+hiddenInHomeList: "true"
 title: Fn клавиши перестали работать на Lenovo Thinkpad Edge  с Debian
 url: /2012/08/fn-клавиши-перестали-работать-на-lenovo-thinkpad-edge-debian/
 ---

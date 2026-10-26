@@ -1,15 +1,14 @@
 ---
 author: rodush
 categories:
-- PHP
-- databases
-date: '2011-03-27T12:26:40+00:00'
+  - Programming
 tags:
-- cookie
-- php
-- pma
-- session
-- timeout
+  - PHP
+  - phpmyadmin
+  - session
+  - timeout
+date: '2011-03-27T12:26:40+00:00'
+hiddenInHomeList: "true"
 title: How to change PHPMyAdmin session timeout
 url: /2011/03/how-to-change-phpmyadmin-session-timeout/
 ---

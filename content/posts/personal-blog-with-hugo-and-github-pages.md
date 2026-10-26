@@ -2,13 +2,15 @@
 title: "Personal Blog With Hugo and Github Pages"
 date: 2026-10-24T18:32:29+02:00
 categories:
-  - howto
-  - blog
+  - HowTo
 tags:
   - hugo
-  - "github"
+  - github
   - PaperMod
   - blog
+  - "github actions"
+  - "custom domain"
+  - setup
 ---
 
 In this post I would like to share how to setup personal blog pretty much for free,

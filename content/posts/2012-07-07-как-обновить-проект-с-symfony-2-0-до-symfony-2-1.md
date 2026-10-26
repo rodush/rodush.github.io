@@ -1,16 +1,14 @@
 ---
 author: rodush
 categories:
-- composer
-- PHP
-- symfony
-- Без рубрики
-date: '2012-07-07T19:57:18+00:00'
+  - Programming
 tags:
-- howto
-- project
-- symfony
-- upgrade
+  - composer
+  - PHP
+  - symfony
+  - upgrade
+date: '2012-07-07T19:57:18+00:00'
+hiddenInHomeList: "true"
 title: Как обновить проект с symfony-2.0 до symfony-2.1
 url: /2012/07/как-обновить-проект-с-symfony-2-0-до-symfony-2-1/
 ---

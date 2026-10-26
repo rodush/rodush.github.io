@@ -1,9 +1,12 @@
 ---
 author: rodush
 categories:
-- PHP
-- symfony
+  - Programming
+tags:
+  - PHP
+  - symfony
 date: '2012-06-19T10:05:33+00:00'
+hiddenInHomeList: "true"
 title: Symfony 2.0 FOSUserBundle — ошибка «Could not load type»
 url: /2012/06/symfony-2-0-fosuserbundle-ошибка-could-not-load-type/
 ---

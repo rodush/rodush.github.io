@@ -32,6 +32,11 @@ you can also find my super old (and by now mostly irrelevant :facepalm:) posts f
 those are fun to read :joy:, I seem to have had a personal style back then!
 """
 
+[[menu.main]]
+  name = "Archive"
+  url = "/archives/"
+  weight = 10
+
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/rodush"
@@ -47,4 +52,3 @@ those are fun to read :joy:, I seem to have had a personal style back then!
 [[params.socialIcons]]
   name = "medium"
   url = "https://medium.com/@rodush"
-
