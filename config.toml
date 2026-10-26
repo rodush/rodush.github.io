@@ -6,7 +6,7 @@ baseUrl = "https://www.rodush.com"
 name = "Roman Dushko - Software Engineering Leader - Tech Enthusiast"
 title = "Roman Dushko - Personal blog"
 
-enableRobotsTXT = true
+enableRobotsTXT = false
 enableEmoji = true
 
 [params]
