@@ -29,7 +29,12 @@ At best, it's possible to instruct an agent (e.g. via AGENTS.md instruction) to 
 In that case services like Github correctly recognise co-authorship and contribution from the coding agent (Claude Code, Codex, etc).\
 Even though some people don't like it and try to hide this information for some reason :shrug:
 
-You also can not approve your own pull requests, or in the comments it looks like you are talking to yourself.
+
+You also can not approve your own pull requests: 
+![Example screenshot showing how Approve or Request Changes options are blocked for own pull-request](/images/cant-approve-request-changes.png#center)
+
+And in the comments it looks like you are talking to yourself :smile:
+
 
 # The Solution
 
