@@ -2,6 +2,7 @@
 title: "GRAIT: A GitHub-Native Workflow for AI-Augmented Software Development"
 date: 2026-11-25T13:05:28+01:00
 description: "GRAIT brings engineering discipline to AI-assisted development through a repository-native workflow for issues, testing, implementation, pull requests, and human approval."
+draft: true
 categories:
   - AI
   - Programming
@@ -22,9 +23,9 @@ tags:
 
 AI makes it faster to generate code, but faster output does not automatically mean better software.
 
-I recently wrote a [blog post](https://www.rodush.com/posts/collaborating-with-ai-coding-agents-in-github/) about how I have created a dedicated identity for my Codex Agent, so I can fully utilize features which GitHub provides to me: PR approval, clear conversation in the comments, branch protection with the rulesets, etc.
+I recently [have written about](https://www.rodush.com/posts/collaborating-with-ai-coding-agents-in-github/) how I have created a dedicated identity for my Codex Agent, so I can fully utilize features which GitHub provides to me: PR approval, clear conversation in the comments, branch protection with the rulesets, etc.
 
-While using coding agents, I instruct them to use TDD [test-driven-development](https://en.wikipedia.org/wiki/Test-driven_development) approach, but I am not confident that AI agents actually do follow my instructions strictly.
+While using coding agents, I instruct them to use TDD ([test-driven-development](https://en.wikipedia.org/wiki/Test-driven_development)) approach. To be honest, I am not confident that AI agents actually do follow my instructions strictly.
 I have discussed this with some engineers, and we talked about how it would be better to set the strict boundaries and areas of responsibilities, and have the clear handover from one agent to another.
 
 Additionally, I wanted to have some template for the git repository/new project, where I would have a collection of "best practices" skills, agents, instructions, etc., so I don't have to repeat the setup step manually in every other project which I build with AI agents.
@@ -46,7 +47,7 @@ GRAIT makes AI-assisted work visible in the same place your team already manages
 
 ### 1. Work starts as a GitHub issue
 
-Ask in your AI harness, i.e. Codex CLI, to create a ticket in Project:
+Ask in your AI harness, e.g. Codex CLI, to create the ticket in Project:
 
 ![Prompt in Codex CLI with the request to create issue in the Github Project](/images/example-prompt-for-github-issue.png#center)
 
@@ -54,7 +55,7 @@ A request begins as an issue with a clear scope and acceptance criteria:
 
 ![Ticket specification automatically created by OpenAI's Gpt-6.2-Sol with High reasoning effort](/images/example-ticket-speced-by-sol-6.2-high.png)
 
-A triage role checks that the work is understood, identifies dependencies, and decides whether it is ready to start. If key details are missing, the issue stays in the **Backlog** until a person clarifies them:
+A triage role checks that the work is understood, identifies dependencies, and decides whether it is ready to start. If key details are missing, the issue stays in the **Backlog** until a person clarifies them. Such tickets will be labeled with `agent:needs-human`. Otherwise, the ticket sits in the backlog waiting for `triage` agent to check it and move to **Ready**:
 
 ![Ticket in the backlog on the Github Project board](/images/example-ticket-in-project-board.png#center)
 
